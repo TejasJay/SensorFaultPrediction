@@ -14,4 +14,4 @@ Here we implemented an end to end solution, which increased the production by 20
 
 Download the code and unzip the file in your working directory.
 
-![alt text](https://github.com/TejasJay/SensorFaultPrediction/tree/master/git_readme_pictures/screenshot%20(81).png?raw=True)
+![alt text](https://github.com/TejasJay/SensorFaultPrediction/tree/master/git_readme_pictures/Screenshot%20(81).png?raw=True)
