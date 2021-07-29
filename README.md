@@ -13,3 +13,5 @@ Here we implemented an end to end solution, which increased the production by 20
 # Running the application
 
 Download the code and unzip the file in your working directory.
+
+![Screenshot (81)](https://user-images.githubusercontent.com/79327536/127472498-82c5b00f-54ed-4b3c-b41e-7dde7cc5ebcf.png)
