@@ -12,3 +12,4 @@ Here we implemented an end to end solution, which increased the production by 20
 
 # Running the application
 
+Download the code and unzip the file in your working directory.
