@@ -17,6 +17,7 @@ Here we implemented an end to end solution, which increased the production by 20
 3) Run "main.py" file
 4) Open Chrome browser and run localhost:5000
 5) Click predict button
-6) view the predicted file and logs once the prediction is complete.
+6) view the predicted file and logs once the prediction is complete
+7) You can also view the input dataset for prediction on Prediction_Batch_files directory.
 
 For more details on how to run the web application, visit my website.
