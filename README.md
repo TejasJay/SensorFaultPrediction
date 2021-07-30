@@ -12,6 +12,11 @@ Here we implemented an end to end solution, which increased the production by 20
 
 # Running the application
 
-Download the code and unzip the file in your working directory.
+1) Download the code on your local machine and set a working environment
+2) Install all the requirements on your terminal by typing ---> pip install -r requirements.txt
+3) Run "main.py" file
+4) Open Chrome browser and run localhost:5000
+5) Click predict button
+6) view the predicted file and logs once the prediction is complete.
 
-![alt text](https://github.com/TejasJay/SensorFaultPrediction/tree/master/git_readme_pictures/Screenshot(81).png?raw=True)
+For more details on how to run the web application, visit my website.
