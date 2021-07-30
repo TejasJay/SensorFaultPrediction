@@ -8,7 +8,7 @@ Macro Technologies ltd., is a medium scale plastic injection mould industry. Thi
 
 # Solution
 
-Here we implemented an end to end solution, which increased the production by 20% and cut downtime by 15%, in turn generating more revenue and delivering the products according to the client’s requirement. I have designed and built the complete system architecture to demonstrate how we solved the business problem. I am using a sample raw data that I used to build the solution, for this demonstration.
+Here we implemented an end to end solution, which <b>increased the production by 20%</b> and cut downtime by 15%, in turn generating more revenue and delivering the products according to the client’s requirement. I have designed and built the complete system architecture to demonstrate how we solved the business problem. I am using a sample raw data that I used to build the solution, for this demonstration.
 
 # Running the application
 
