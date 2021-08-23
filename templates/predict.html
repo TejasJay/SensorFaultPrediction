@@ -702,22 +702,15 @@ padding-top: 50px;
 					<form method="post" id="datafetch_form" enctype="multipart/form-data">
                         <br><br><br><br>
 
-
-
-
                         <div class="center">
                             <div class="outer circle">
-                               <button class="hero-btn2" id="defaultfile" data-path = "Prediction_Batch_files"><h2>PREDICT</h2></button>
+                               <button class="hero-btn2" id="defaultfile" data-path ="Prediction_Batch_files"><h2>PREDICT</h2></button>
                                <span></span>
                                <span></span>
                             </div>
                         </div>
 					</form>
 				</div>
-
-
-
-
 
                 <div id="loader1" class="loading">
                     <h2 align="center">
@@ -822,6 +815,12 @@ padding-top: 50px;
 
 <!------------------------------------------ Bootstrap core JavaScript for prediction------------------------------------------>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
 	<script>
 		$(document).ready(function(){
 			$('#loader1').hide();
@@ -836,7 +835,7 @@ padding-top: 50px;
 					//change url below
 					url : "/predict",
 					type: "POST",
-					data: {filepath:path},
+					data: {folderpath:path, modelname:"svc"},
 					success: function(response){
 						$('#show').html('<h3>Prediction successful! </h3> <br> <h6>Prediction File created in the project directory at <br> Prediction_Output_File/Predictions.csv </h6>');
 						$('#loader1').hide();

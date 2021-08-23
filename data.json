@@ -1,0 +1,1 @@
+{"0": {"Actual": "gnb_Actual (Fraud)", "Predicted_Fraud": "True_positive: 1", "Predicted_Not_Fraud": "false_negetive: 15"}, "1": {"Actual": "gnb_Actual (Not_Fraud)", "Predicted_Fraud": "false_positive: 10", "Predicted_Not_Fraud": "True_negetive: 248"}}

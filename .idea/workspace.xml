@@ -1,7 +1,524 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8304c17-3ea3-4286-83a7-752408df297d" name="Default Changelist" comment="" />
+    <list default="true" id="d8304c17-3ea3-4286-83a7-752408df297d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prediction_Batch_files/AmlSarScreening_20202020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prediction_Raw_Files_Validated/Good_Raw/AmlSarScreening_20202020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Training_Batch_Files/AmlSarScreening_11152020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Training_FileFromDB/InputFile.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Training_Raw_files_validated/Good_Raw/AmlSarScreening_11152020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_model_finder/tuner_new.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_output_files/confusion_matrix.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/gnb/gnb.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/lgb/lgb.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/svc/svc.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secure-connect-aml-sar.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style_home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/background1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/box9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/investigate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/magnify.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/mlstages.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/plot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/predimgg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/table.mhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/trainimgg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/predict_train.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/train.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WaferFaultDetection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WaferFaultDetection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataTransform_Training/DataTransformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataTransform_Training/DataTransformation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataTransformation_Prediction/DataTransformationPrediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataTransformation_Prediction/DataTransformationPrediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataTypeValidation_Insertion_Prediction/DataTypeValidationPrediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataTypeValidation_Insertion_Prediction/DataTypeValidationPrediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataTypeValidation_Insertion_Training/DataTypeValidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataTypeValidation_Insertion_Training/DataTypeValidation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_130810/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_130810/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_130810/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_130810/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_130810/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_130810/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_130810/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_130810/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_130810/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_130810/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_131733/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_131733/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_131733/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_131733/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_131733/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_131733/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_131733/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_131733/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_131733/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_131733/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_135955/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_135955/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_135955/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_135955/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_135955/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_135955/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_135955/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_135955/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_135955/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_135955/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_154058/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_154058/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_154058/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_154058/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_154058/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_154058/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_154058/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_154058/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_154058/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_154058/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_173246/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_173246/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_173246/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_173246/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_173246/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_173246/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_173246/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_173246/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_173246/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_173246/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_174652/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_174652/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_174652/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_174652/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_174652/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_174652/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_174652/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_174652/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_174652/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_174652/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_180008/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_180008/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_180008/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_180008/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_180008/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_180008/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_180008/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_180008/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_180008/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_180008/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_182746/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_182746/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_182746/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_182746/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_182746/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_182746/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_182746/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_182746/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_182746/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_182746/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_184922/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_184922/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_184922/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_184922/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_184922/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_184922/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_184922/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_184922/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_184922/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_184922/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_204938/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_204938/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_204938/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_204938/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_204938/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_204938/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_204938/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_204938/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_204938/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_204938/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_210722/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_210722/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_210722/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_210722/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_210722/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_210722/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_210722/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_210722/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_210722/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_210722/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_213635/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_213635/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_213635/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_213635/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_213635/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_213635/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_213635/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_213635/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_213635/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_213635/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_230957/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_230957/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_230957/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_230957/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_230957/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_230957/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_230957/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_230957/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_230957/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-27_230957/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_112123/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_112123/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_112123/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_112123/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_112123/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_112123/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_112123/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_112123/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_112123/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_112123/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_113552/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_113552/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_113552/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_113552/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_113552/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_113552/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_113552/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_113552/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_113552/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_113552/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_114622/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_114622/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_114622/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_114622/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_114622/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_114622/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_114622/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_114622/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_114622/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_114622/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_120429/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_120429/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_120429/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_120429/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_120429/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_120429/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_120429/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_120429/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_120429/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_120429/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_123553/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_123553/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_123553/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_123553/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_123553/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_123553/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_123553/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_123553/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_123553/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_123553/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_125410/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_125410/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_125410/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_125410/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_125410/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_125410/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_125410/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_125410/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_125410/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_125410/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_130142/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_130142/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_130142/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_130142/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_130142/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_130142/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_130142/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_130142/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_130142/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_130142/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_133305/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_133305/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_133305/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_133305/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_133305/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_133305/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_133305/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_133305/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_133305/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_133305/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_153930/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_153930/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_153930/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_153930/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_153930/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_153930/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_153930/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_153930/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_153930/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_153930/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_160559/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_160559/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_160559/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_160559/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_160559/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_160559/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_160559/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_160559/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_160559/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_160559/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_163609/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_163609/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_163609/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_163609/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_163609/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_163609/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_163609/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_163609/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_163609/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_163609/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_174520/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_174520/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_174520/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_174520/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_174520/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_174520/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_174520/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_174520/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_174520/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_174520/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_181511/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_181511/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_181511/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_181511/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_181511/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_181511/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_181511/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_181511/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_181511/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_181511/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_182438/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_182438/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_182438/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_182438/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_182438/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_182438/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_182438/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_182438/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_182438/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_182438/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_191832/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_191832/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_191832/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_191832/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_191832/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_191832/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_191832/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_191832/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_191832/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_191832/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_192802/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_192802/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_192802/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_192802/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_192802/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_192802/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_192802/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_192802/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_192802/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_192802/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_195426/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_195426/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_195426/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_195426/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_195426/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_195426/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_195426/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_195426/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_195426/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-28_195426/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_021951/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_021951/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_021951/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_021951/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_021951/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_021951/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_021951/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_021951/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_021951/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_021951/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_031108/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_031108/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_031108/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_031108/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_031108/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_031108/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_031108/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_031108/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_031108/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_031108/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_032540/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_032540/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_032540/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_032540/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_032540/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_032540/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_032540/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_032540/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_032540/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_032540/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_041841/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_041841/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_041841/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_041841/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_041841/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_041841/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_041841/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_041841/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_041841/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionArchivedBadData/BadData_2021-07-29_041841/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_13012020_090817.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_16012020_051629.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_20022020_090716.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_21012020_080913.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_23012020_041211.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_27012020_080911.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_28012020_090817.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_28042020_031911.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_29012020_050617.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Batch_files/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Database/Prediction.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_FileFromDB/InputFile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_FileFromDB/InputFile.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/DataBaseConnectionLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/DbInsertLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/DbTableCreateLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/ExportToCsv.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/GeneralLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/Prediction_Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/Prediction_Log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/columnValidationLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/dataTransformLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/missingValuesInColumn.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/nameValidationLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Output_File/Predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Output_File/Predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Raw_Data_Validation/predictionDataValidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Raw_Data_Validation/predictionDataValidation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer12_20012.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_07012020_000000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_07012020_223345.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_08012020_120000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_10012020_131534.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_11012020_151432.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_12012020_111.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_12012020_111213.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_13012020_141000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_14012020_113045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_15012020_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_18012020_121532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_19012020_141432.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_20012020_135132.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_21012020_143634.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_22012020_173245.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_23012020_163456.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_24012020_150121.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_25012020_142112.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_fault_detection.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Wafer_text_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/Waferdefault_15010_130532.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_07012020_041011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_13012020_090817.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_16012020_051629.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_16012020_134553.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_17012020_125434.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_20012020_090819.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_20022020_090716.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_21012020_080913.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_22022020_041119.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_23012020_011008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_23012020_041211.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_27012020_080911.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_28012020_051011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_28012020_090817.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_28042020_031911.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_29012020_050617.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_29012020_060756.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Batch_Files/wafer_31012020_090811.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/DataBaseConnectionLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/DbInsertLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/DbTableCreateLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/ExportToCsv.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/GeneralLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/ModelTrainingLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/Training_Main_Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/Training_Main_Log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/columnValidationLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/dataTransformLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/missingValuesInColumn.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/nameValidationLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/valuesfromSchemaValidationLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Raw_data_validation/rawValidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Raw_data_validation/rawValidation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application_logging/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/application_logging/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/best_model_finder/tuner.py" beforeDir="false" afterPath="$PROJECT_DIR$/best_model_finder/tuner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_ingestion/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_ingestion/data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_ingestion/data_loader_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_ingestion/data_loader_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocessing/clustering.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocessing/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocessing/preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_operations/file_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_operations/file_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_monitoringdashboard.db" beforeDir="false" afterPath="$PROJECT_DIR$/flask_monitoringdashboard.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/KMeans/KMeans.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/RandomForest1/RandomForest1.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/XGBoost0/XGBoost0.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/XGBoost2/XGBoost2.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictFromModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictFromModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_Validation_Insertion.py" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_Validation_Insertion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema_prediction.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema_prediction.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema_training.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema_training.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/AI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/artificial intelligence.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/background 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/background1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/background2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/background2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/background3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/background4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/background5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/background6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/car parts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/injection intelligence process flow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/injection-molding.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/j.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/joakim-honkasalo-ssvjJLB6wIw-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Prediction_Log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Prediction_result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/predict.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/predict.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainingModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainingModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_Validation_Insertion.py" beforeDir="false" afterPath="$PROJECT_DIR$/training_Validation_Insertion.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,16 +531,25 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JupyterTrust" id="6a3ee546-02e5-4070-baf0-ba936f633745" />
   <component name="ProjectId" id="1Wpi9h7By7uq7Lg814h5fCb7qvD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ineuron/ML masters/ML Projects/creditCardDefaulters/code/creditCardDefaulters" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -195,6 +721,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -224,24 +765,9 @@
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/trainingModel.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/trainingModel.py</url>
-          <line>90</line>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/best_model_finder/tuner.py</url>
-          <line>136</line>
+          <line>401</line>
           <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/trainingModel.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="124" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

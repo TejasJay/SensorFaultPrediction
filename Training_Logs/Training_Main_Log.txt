@@ -1,0 +1,1828 @@
+2021-08-21	20:52:31	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-21	20:52:31	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-21	20:52:31	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-21	20:52:31	BadRaw directory deleted before starting validation!!!
+2021-08-21	20:52:31	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-21	20:52:31	GoodRaw directory deleted successfully!!!
+2021-08-21	20:52:31	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-21	20:52:31	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-21	20:52:31	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-21	20:52:31	Column Length Validation Started!!
+2021-08-21	20:52:31	Column Length Validation Completed!!
+2021-08-21	20:52:31	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-21	20:52:31	Missing Values Validation Started!!
+2021-08-21	20:52:32	Entered datatransformation method of dataTransform class
+2021-08-21	20:52:32	Entered the cassandra_connection method of dBOperation class
+2021-08-21	20:52:43	Entered the get_key_space method of dBOperation class
+2021-08-21	20:52:43	Entered the cassandra_connection method of dBOperation class
+2021-08-21	20:52:52	Entered the deleteRecords method of dBOperation class
+2021-08-21	20:52:52	Entered the cassandra_connection method of dBOperation class
+2021-08-21	20:53:09	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-21	20:53:47	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-21	20:53:47	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-21	20:53:47	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-21	20:53:47	BadRaw directory deleted before starting validation!!!
+2021-08-21	20:53:47	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-21	20:53:47	GoodRaw directory deleted successfully!!!
+2021-08-21	20:53:47	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-21	20:53:47	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-21	20:53:47	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-21	20:53:47	Column Length Validation Started!!
+2021-08-21	20:53:47	Column Length Validation Completed!!
+2021-08-21	20:53:47	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-21	20:53:47	Missing Values Validation Started!!
+2021-08-21	20:53:47	Entered datatransformation method of dataTransform class
+2021-08-21	20:53:48	Entered the cassandra_connection method of dBOperation class
+2021-08-21	20:53:54	Entered the get_key_space method of dBOperation class
+2021-08-21	20:53:54	Entered the cassandra_connection method of dBOperation class
+2021-08-21	20:54:03	Entered the deleteRecords method of dBOperation class
+2021-08-21	20:54:03	Entered the cassandra_connection method of dBOperation class
+2021-08-21	20:54:10	Entered the create_table method of dBOperation class
+2021-08-21	20:54:10	Entered the cassandra_connection method of dBOperation class
+2021-08-21	20:54:17	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-21	20:54:17	Entered the cassandra_connection method of dBOperation class
+2021-08-21	20:55:32	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-21	20:55:32	Entered the cassandra_connection method of dBOperation class
+2021-08-21	20:55:40	File exported successfully!!!
+2021-08-21	20:55:40	Entered the get_data method of the Data_Getter class
+2021-08-21	20:55:40	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-21	20:55:40	Entered the remove_columns method of the Preprocessor class
+2021-08-21	20:55:40	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-21	20:55:40	Entered the separate_label_feature method of the Preprocessor class
+2021-08-21	20:55:40	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-21	20:55:40	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-21	20:55:40	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-21	20:55:40	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-21	20:55:40	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-21	20:55:41	Entered the get_best_model method of the Model_Finder class
+2021-08-21	20:55:41	Entered the model_for_gnb method of the Model_Finder class
+2021-08-21	20:55:41	Entered the model_for_xgb method of the Model_Finder class
+2021-08-21	20:56:31	Entered the model_for_rf method of the Model_Finder class
+2021-08-21	20:57:15	Entered the model_for_svc method of the Model_Finder class
+2021-08-21	20:57:15	Entered the model_for_lgb method of the Model_Finder class
+2021-08-21	20:57:45	Entered the best_model_scoring method of the Model_Finder class
+2021-08-21	20:57:45	Entered the save_model method of the File_Operation class
+2021-08-21	20:57:45	Model File gnb saved. Exited the save_model method of the Model_Finder class
+2021-08-21	20:55:40	Start of Training
+2021-08-21	20:57:45	gnb Successfully trained and saved in project directory
+2021-08-21	20:57:45	Entered the save_model method of the File_Operation class
+2021-08-21	20:57:45	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-21	20:57:45	xgb Successfully trained and saved in project directory
+2021-08-21	20:57:45	Entered the save_model method of the File_Operation class
+2021-08-21	20:57:45	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-21	20:57:45	rf Successfully trained and saved in project directory
+2021-08-21	20:57:45	Entered the save_model method of the File_Operation class
+2021-08-21	20:57:45	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-21	20:57:45	svc Successfully trained and saved in project directory
+2021-08-21	20:57:45	Entered the save_model method of the File_Operation class
+2021-08-21	20:57:45	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-21	20:57:45	lgb Successfully trained and saved in project directory
+2021-08-21	20:57:45	Successful End of Training, sending json
+2021-08-22	04:34:37	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	04:34:37	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	04:34:37	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	04:34:37	BadRaw directory deleted before starting validation!!!
+2021-08-22	04:34:37	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	04:34:37	GoodRaw directory deleted successfully!!!
+2021-08-22	04:34:37	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	04:34:37	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	04:34:37	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	04:34:37	Column Length Validation Started!!
+2021-08-22	04:34:38	Column Length Validation Completed!!
+2021-08-22	04:34:38	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	04:34:38	Missing Values Validation Started!!
+2021-08-22	04:34:38	Entered datatransformation method of dataTransform class
+2021-08-22	04:34:38	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:34:46	Entered the get_key_space method of dBOperation class
+2021-08-22	04:34:46	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:34:53	Entered the deleteRecords method of dBOperation class
+2021-08-22	04:34:53	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:35:10	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-22	04:36:13	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	04:36:13	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	04:36:13	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	04:36:13	BadRaw directory deleted before starting validation!!!
+2021-08-22	04:36:13	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	04:36:13	GoodRaw directory deleted successfully!!!
+2021-08-22	04:36:13	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	04:36:13	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	04:36:13	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	04:36:13	Column Length Validation Started!!
+2021-08-22	04:36:14	Column Length Validation Completed!!
+2021-08-22	04:36:14	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	04:36:14	Missing Values Validation Started!!
+2021-08-22	04:36:14	Entered datatransformation method of dataTransform class
+2021-08-22	04:36:14	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:36:22	Entered the get_key_space method of dBOperation class
+2021-08-22	04:36:22	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:36:30	Entered the deleteRecords method of dBOperation class
+2021-08-22	04:36:30	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:36:37	Entered the create_table method of dBOperation class
+2021-08-22	04:36:37	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:36:46	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-22	04:36:46	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:38:02	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-22	04:38:02	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:38:11	File exported successfully!!!
+2021-08-22	04:38:11	Entered the get_data method of the Data_Getter class
+2021-08-22	04:38:11	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-22	04:38:11	Entered the remove_columns method of the Preprocessor class
+2021-08-22	04:38:11	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-22	04:38:11	Entered the separate_label_feature method of the Preprocessor class
+2021-08-22	04:38:11	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-22	04:38:11	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-22	04:38:11	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-22	04:38:11	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-22	04:38:11	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-22	04:38:11	Entered the get_best_model method of the Model_Finder class
+2021-08-22	04:38:11	Entered the model_for_gnb method of the Model_Finder class
+2021-08-22	04:38:12	Entered the model_for_xgb method of the Model_Finder class
+2021-08-22	04:38:58	Entered the model_for_rf method of the Model_Finder class
+2021-08-22	04:39:34	Entered the model_for_svc method of the Model_Finder class
+2021-08-22	04:39:34	Entered the model_for_lgb method of the Model_Finder class
+2021-08-22	04:40:00	Entered the best_model_scoring method of the Model_Finder class
+2021-08-22	04:40:00	Entered the save_model method of the File_Operation class
+2021-08-22	04:40:00	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	04:38:11	Start of Training
+2021-08-22	04:40:00	xgb Successfully trained and saved in project directory
+2021-08-22	04:40:00	Entered the save_model method of the File_Operation class
+2021-08-22	04:40:01	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-22	04:40:01	rf Successfully trained and saved in project directory
+2021-08-22	04:40:01	Entered the save_model method of the File_Operation class
+2021-08-22	04:40:01	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-22	04:40:01	svc Successfully trained and saved in project directory
+2021-08-22	04:40:01	Entered the save_model method of the File_Operation class
+2021-08-22	04:40:01	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	04:40:01	lgb Successfully trained and saved in project directory
+2021-08-22	04:40:01	Successful End of Training, sending json
+2021-08-22	04:46:46	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	04:46:46	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	04:46:46	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	04:46:46	BadRaw directory deleted before starting validation!!!
+2021-08-22	04:46:46	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	04:46:46	GoodRaw directory deleted successfully!!!
+2021-08-22	04:46:46	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	04:46:46	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	04:46:46	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	04:46:46	Column Length Validation Started!!
+2021-08-22	04:46:46	Column Length Validation Completed!!
+2021-08-22	04:46:46	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	04:46:46	Missing Values Validation Started!!
+2021-08-22	04:46:46	Entered datatransformation method of dataTransform class
+2021-08-22	04:46:46	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:46:53	Entered the get_key_space method of dBOperation class
+2021-08-22	04:46:53	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:47:01	Entered the deleteRecords method of dBOperation class
+2021-08-22	04:47:01	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:47:18	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-22	04:47:53	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	04:47:53	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	04:47:53	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	04:47:53	BadRaw directory deleted before starting validation!!!
+2021-08-22	04:47:53	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	04:47:53	GoodRaw directory deleted successfully!!!
+2021-08-22	04:47:54	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	04:47:54	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	04:47:54	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	04:47:54	Column Length Validation Started!!
+2021-08-22	04:47:54	Column Length Validation Completed!!
+2021-08-22	04:47:54	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	04:47:54	Missing Values Validation Started!!
+2021-08-22	04:47:54	Entered datatransformation method of dataTransform class
+2021-08-22	04:47:54	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:48:03	Entered the get_key_space method of dBOperation class
+2021-08-22	04:48:03	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:48:11	Entered the deleteRecords method of dBOperation class
+2021-08-22	04:48:11	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:48:19	Entered the create_table method of dBOperation class
+2021-08-22	04:48:19	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:48:28	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-22	04:48:28	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:49:43	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-22	04:49:43	Entered the cassandra_connection method of dBOperation class
+2021-08-22	04:49:53	File exported successfully!!!
+2021-08-22	04:49:53	Entered the get_data method of the Data_Getter class
+2021-08-22	04:49:53	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-22	04:49:53	Entered the remove_columns method of the Preprocessor class
+2021-08-22	04:49:53	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-22	04:49:53	Entered the separate_label_feature method of the Preprocessor class
+2021-08-22	04:49:53	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-22	04:49:53	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-22	04:49:53	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-22	04:49:53	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-22	04:49:53	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-22	04:49:53	Entered the get_best_model method of the Model_Finder class
+2021-08-22	04:49:53	Entered the model_for_gnb method of the Model_Finder class
+2021-08-22	04:49:53	Entered the model_for_xgb method of the Model_Finder class
+2021-08-22	04:50:40	Entered the model_for_rf method of the Model_Finder class
+2021-08-22	04:51:21	Entered the model_for_svc method of the Model_Finder class
+2021-08-22	04:51:22	Entered the model_for_lgb method of the Model_Finder class
+2021-08-22	04:51:49	Entered the best_model_scoring method of the Model_Finder class
+2021-08-22	04:51:49	Entered the save_model method of the File_Operation class
+2021-08-22	04:51:49	Model File gnb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	04:49:53	Start of Training
+2021-08-22	04:51:49	gnb Successfully trained and saved in project directory
+2021-08-22	04:51:49	Entered the save_model method of the File_Operation class
+2021-08-22	04:51:49	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-22	04:51:49	rf Successfully trained and saved in project directory
+2021-08-22	04:51:49	Entered the save_model method of the File_Operation class
+2021-08-22	04:51:49	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-22	04:51:49	svc Successfully trained and saved in project directory
+2021-08-22	04:51:49	Entered the save_model method of the File_Operation class
+2021-08-22	04:51:49	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	04:51:49	lgb Successfully trained and saved in project directory
+2021-08-22	04:51:49	Successful End of Training, sending json
+2021-08-22	05:13:42	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	05:13:42	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	05:13:42	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	05:13:42	BadRaw directory deleted before starting validation!!!
+2021-08-22	05:13:42	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	05:13:42	GoodRaw directory deleted successfully!!!
+2021-08-22	05:13:42	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	05:13:42	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	05:13:42	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	05:13:42	Column Length Validation Started!!
+2021-08-22	05:13:42	Column Length Validation Completed!!
+2021-08-22	05:13:42	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	05:13:42	Missing Values Validation Started!!
+2021-08-22	05:13:42	Entered datatransformation method of dataTransform class
+2021-08-22	05:13:42	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:13:49	Entered the get_key_space method of dBOperation class
+2021-08-22	05:13:49	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:13:58	Entered the deleteRecords method of dBOperation class
+2021-08-22	05:13:58	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:14:15	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-22	05:14:46	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	05:14:46	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	05:14:46	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	05:14:46	BadRaw directory deleted before starting validation!!!
+2021-08-22	05:14:46	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	05:14:46	GoodRaw directory deleted successfully!!!
+2021-08-22	05:14:46	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	05:14:46	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	05:14:46	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	05:14:46	Column Length Validation Started!!
+2021-08-22	05:14:46	Column Length Validation Completed!!
+2021-08-22	05:14:46	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	05:14:46	Missing Values Validation Started!!
+2021-08-22	05:14:46	Entered datatransformation method of dataTransform class
+2021-08-22	05:14:46	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:14:56	Entered the get_key_space method of dBOperation class
+2021-08-22	05:14:56	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:15:04	Entered the deleteRecords method of dBOperation class
+2021-08-22	05:15:04	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:15:13	Entered the create_table method of dBOperation class
+2021-08-22	05:15:13	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:15:22	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-22	05:15:22	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:16:37	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-22	05:16:37	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:16:47	File exported successfully!!!
+2021-08-22	05:16:47	Entered the get_data method of the Data_Getter class
+2021-08-22	05:16:47	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-22	05:16:47	Entered the remove_columns method of the Preprocessor class
+2021-08-22	05:16:47	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-22	05:16:47	Entered the separate_label_feature method of the Preprocessor class
+2021-08-22	05:16:47	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-22	05:16:47	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-22	05:16:47	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-22	05:16:47	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-22	05:16:47	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-22	05:16:47	Entered the get_best_model method of the Model_Finder class
+2021-08-22	05:16:47	Entered the model_for_gnb method of the Model_Finder class
+2021-08-22	05:16:47	Entered the model_for_xgb method of the Model_Finder class
+2021-08-22	05:17:39	Entered the model_for_rf method of the Model_Finder class
+2021-08-22	05:18:20	Entered the model_for_svc method of the Model_Finder class
+2021-08-22	05:18:20	Entered the model_for_lgb method of the Model_Finder class
+2021-08-22	05:18:48	Entered the best_model_scoring method of the Model_Finder class
+2021-08-22	05:18:48	Entered the save_model method of the File_Operation class
+2021-08-22	05:18:48	Model File gnb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	05:16:47	Start of Training
+2021-08-22	05:18:48	gnb Successfully trained and saved in project directory
+2021-08-22	05:18:48	Entered the save_model method of the File_Operation class
+2021-08-22	05:18:48	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	05:18:48	xgb Successfully trained and saved in project directory
+2021-08-22	05:18:48	Entered the save_model method of the File_Operation class
+2021-08-22	05:18:48	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-22	05:18:48	rf Successfully trained and saved in project directory
+2021-08-22	05:18:48	Entered the save_model method of the File_Operation class
+2021-08-22	05:18:48	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-22	05:18:48	svc Successfully trained and saved in project directory
+2021-08-22	05:18:48	Entered the save_model method of the File_Operation class
+2021-08-22	05:18:48	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	05:18:48	lgb Successfully trained and saved in project directory
+2021-08-22	05:18:48	Exception occured in trainingModel method of the trainModel class. Exception message:  argument 1 must have a "write" method
+2021-08-22	05:18:48	Model Selection Failed. Exited the trainingModel method of the trainModel class
+2021-08-22	05:28:29	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	05:28:29	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	05:28:29	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	05:28:29	BadRaw directory deleted before starting validation!!!
+2021-08-22	05:28:29	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	05:28:29	GoodRaw directory deleted successfully!!!
+2021-08-22	05:28:29	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	05:28:29	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	05:28:29	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	05:28:29	Column Length Validation Started!!
+2021-08-22	05:28:30	Column Length Validation Completed!!
+2021-08-22	05:28:30	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	05:28:30	Missing Values Validation Started!!
+2021-08-22	05:28:31	Entered datatransformation method of dataTransform class
+2021-08-22	05:28:31	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:28:41	Entered the get_key_space method of dBOperation class
+2021-08-22	05:28:41	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:28:48	Entered the deleteRecords method of dBOperation class
+2021-08-22	05:28:48	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:29:05	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-22	05:30:30	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	05:30:30	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	05:30:30	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	05:30:30	BadRaw directory deleted before starting validation!!!
+2021-08-22	05:30:30	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	05:30:30	GoodRaw directory deleted successfully!!!
+2021-08-22	05:30:30	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	05:30:30	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	05:30:30	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	05:30:30	Column Length Validation Started!!
+2021-08-22	05:30:30	Column Length Validation Completed!!
+2021-08-22	05:30:30	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	05:30:30	Missing Values Validation Started!!
+2021-08-22	05:30:30	Entered datatransformation method of dataTransform class
+2021-08-22	05:30:30	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:30:38	Entered the get_key_space method of dBOperation class
+2021-08-22	05:30:38	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:30:45	Entered the deleteRecords method of dBOperation class
+2021-08-22	05:30:45	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:30:52	Entered the create_table method of dBOperation class
+2021-08-22	05:30:52	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:31:00	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-22	05:31:00	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:32:13	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-22	05:32:13	Entered the cassandra_connection method of dBOperation class
+2021-08-22	05:32:21	File exported successfully!!!
+2021-08-22	05:32:21	Entered the get_data method of the Data_Getter class
+2021-08-22	05:32:21	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-22	05:32:21	Entered the remove_columns method of the Preprocessor class
+2021-08-22	05:32:21	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-22	05:32:21	Entered the separate_label_feature method of the Preprocessor class
+2021-08-22	05:32:21	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-22	05:32:22	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-22	05:32:23	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-22	05:32:23	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-22	05:32:23	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-22	05:32:23	Entered the get_best_model method of the Model_Finder class
+2021-08-22	05:32:23	Entered the model_for_gnb method of the Model_Finder class
+2021-08-22	05:32:26	Entered the model_for_xgb method of the Model_Finder class
+2021-08-22	05:33:57	Entered the model_for_rf method of the Model_Finder class
+2021-08-22	05:34:46	Entered the model_for_svc method of the Model_Finder class
+2021-08-22	05:34:47	Entered the model_for_lgb method of the Model_Finder class
+2021-08-22	05:35:23	Entered the best_model_scoring method of the Model_Finder class
+2021-08-22	05:35:23	Entered the save_model method of the File_Operation class
+2021-08-22	05:35:23	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	05:32:21	Start of Training
+2021-08-22	05:35:23	xgb Successfully trained and saved in project directory
+2021-08-22	05:35:23	Entered the save_model method of the File_Operation class
+2021-08-22	05:35:23	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-22	05:35:23	svc Successfully trained and saved in project directory
+2021-08-22	05:35:23	Entered the save_model method of the File_Operation class
+2021-08-22	05:35:23	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	05:35:23	lgb Successfully trained and saved in project directory
+2021-08-22	05:35:24	Successful End of Training, sending json
+2021-08-22	09:57:27	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	09:57:28	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	09:57:28	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	09:57:28	BadRaw directory deleted before starting validation!!!
+2021-08-22	09:57:28	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	09:57:28	GoodRaw directory deleted successfully!!!
+2021-08-22	09:57:28	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	09:57:28	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	09:57:28	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	09:57:28	Column Length Validation Started!!
+2021-08-22	09:57:29	Column Length Validation Completed!!
+2021-08-22	09:57:29	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	09:57:29	Missing Values Validation Started!!
+2021-08-22	09:57:29	Entered datatransformation method of dataTransform class
+2021-08-22	09:57:29	Entered the cassandra_connection method of dBOperation class
+2021-08-22	09:57:38	Entered the get_key_space method of dBOperation class
+2021-08-22	09:57:38	Entered the cassandra_connection method of dBOperation class
+2021-08-22	09:57:45	Entered the deleteRecords method of dBOperation class
+2021-08-22	09:57:45	Entered the cassandra_connection method of dBOperation class
+2021-08-22	09:58:02	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-22	09:58:48	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	09:58:48	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	09:58:48	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	09:58:48	BadRaw directory deleted before starting validation!!!
+2021-08-22	09:58:48	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	09:58:48	GoodRaw directory deleted successfully!!!
+2021-08-22	09:58:48	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	09:58:48	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	09:58:48	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	09:58:48	Column Length Validation Started!!
+2021-08-22	09:58:48	Column Length Validation Completed!!
+2021-08-22	09:58:48	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	09:58:48	Missing Values Validation Started!!
+2021-08-22	09:58:48	Entered datatransformation method of dataTransform class
+2021-08-22	09:58:48	Entered the cassandra_connection method of dBOperation class
+2021-08-22	09:58:55	Entered the get_key_space method of dBOperation class
+2021-08-22	09:58:55	Entered the cassandra_connection method of dBOperation class
+2021-08-22	09:59:03	Entered the deleteRecords method of dBOperation class
+2021-08-22	09:59:03	Entered the cassandra_connection method of dBOperation class
+2021-08-22	09:59:10	Entered the create_table method of dBOperation class
+2021-08-22	09:59:10	Entered the cassandra_connection method of dBOperation class
+2021-08-22	09:59:18	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-22	09:59:18	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:00:29	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-22	10:00:29	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:00:39	File exported successfully!!!
+2021-08-22	10:03:15	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	10:03:15	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	10:03:15	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	10:03:15	BadRaw directory deleted before starting validation!!!
+2021-08-22	10:03:15	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	10:03:15	GoodRaw directory deleted successfully!!!
+2021-08-22	10:03:15	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	10:03:15	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	10:03:15	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	10:03:15	Column Length Validation Started!!
+2021-08-22	10:03:15	Column Length Validation Completed!!
+2021-08-22	10:03:15	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	10:03:15	Missing Values Validation Started!!
+2021-08-22	10:03:15	Entered datatransformation method of dataTransform class
+2021-08-22	10:03:15	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:03:22	Entered the get_key_space method of dBOperation class
+2021-08-22	10:03:22	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:03:29	Entered the deleteRecords method of dBOperation class
+2021-08-22	10:03:29	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:03:49	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-22	10:04:41	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-22	10:04:41	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-22	10:04:41	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	10:04:41	BadRaw directory deleted before starting validation!!!
+2021-08-22	10:04:41	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-22	10:04:41	GoodRaw directory deleted successfully!!!
+2021-08-22	10:04:41	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-22	10:04:41	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-22	10:04:41	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-22	10:04:41	Column Length Validation Started!!
+2021-08-22	10:04:41	Column Length Validation Completed!!
+2021-08-22	10:04:41	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-22	10:04:41	Missing Values Validation Started!!
+2021-08-22	10:04:41	Entered datatransformation method of dataTransform class
+2021-08-22	10:04:41	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:04:48	Entered the get_key_space method of dBOperation class
+2021-08-22	10:04:48	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:04:55	Entered the deleteRecords method of dBOperation class
+2021-08-22	10:04:55	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:05:03	Entered the create_table method of dBOperation class
+2021-08-22	10:05:03	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:05:11	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-22	10:05:11	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:06:27	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-22	10:06:27	Entered the cassandra_connection method of dBOperation class
+2021-08-22	10:06:34	File exported successfully!!!
+2021-08-22	10:06:34	Entered the get_data method of the Data_Getter class
+2021-08-22	10:06:34	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-22	10:06:34	Entered the remove_columns method of the Preprocessor class
+2021-08-22	10:06:34	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-22	10:06:34	Entered the separate_label_feature method of the Preprocessor class
+2021-08-22	10:06:34	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-22	10:06:34	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-22	10:06:34	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-22	10:06:34	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-22	10:06:34	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-22	10:06:34	Entered the get_best_model method of the Model_Finder class
+2021-08-22	10:06:34	Entered the model_for_gnb method of the Model_Finder class
+2021-08-22	10:06:35	Entered the model_for_xgb method of the Model_Finder class
+2021-08-22	10:07:23	Entered the model_for_rf method of the Model_Finder class
+2021-08-22	10:08:02	Entered the model_for_svc method of the Model_Finder class
+2021-08-22	10:08:02	Entered the model_for_lgb method of the Model_Finder class
+2021-08-22	10:08:28	Entered the best_model_scoring method of the Model_Finder class
+2021-08-22	10:08:28	Entered the save_model method of the File_Operation class
+2021-08-22	10:08:28	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	10:06:34	Start of Training
+2021-08-22	10:08:28	xgb Successfully trained and saved in project directory
+2021-08-22	10:08:28	Entered the save_model method of the File_Operation class
+2021-08-22	10:08:28	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-22	10:08:28	rf Successfully trained and saved in project directory
+2021-08-22	10:08:28	Entered the save_model method of the File_Operation class
+2021-08-22	10:08:28	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-22	10:08:28	svc Successfully trained and saved in project directory
+2021-08-22	10:08:28	Entered the save_model method of the File_Operation class
+2021-08-22	10:08:28	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-22	10:08:28	lgb Successfully trained and saved in project directory
+2021-08-22	10:08:29	Successful End of Training, sending json
+2021-08-23	07:58:00	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	07:58:17	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	08:10:30	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	08:26:40	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	08:26:58	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	08:29:28	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	08:57:24	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	09:01:30	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	09:01:47	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	09:09:24	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	09:09:43	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed'), <Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	09:11:53	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	09:22:21	Entered the remove_columns method of the Preprocessor class
+2021-08-23	09:22:21	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	09:22:21	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	09:22:21	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	09:22:21	Entered the load_model method of the File_Operation class
+2021-08-23	09:22:22	Model File svc loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	09:54:49	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	09:55:08	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e
+2021-08-23	09:57:18	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:06:00	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:06:18	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	10:07:15	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:17:34	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:17:53	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e
+2021-08-23	10:18:46	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:19:22	Entered the remove_columns method of the Preprocessor class
+2021-08-23	10:19:22	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	10:19:22	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	10:19:22	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	10:19:22	Entered the load_model method of the File_Operation class
+2021-08-23	10:19:22	Model File svc loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	10:25:26	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:25:45	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e
+2021-08-23	10:26:44	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:27:17	Entered the remove_columns method of the Preprocessor class
+2021-08-23	10:27:17	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	10:27:17	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	10:27:17	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	10:27:17	Entered the load_model method of the File_Operation class
+2021-08-23	10:27:17	Model File svc loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	10:35:42	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:35:59	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed'), <Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	10:37:06	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:37:37	Entered the remove_columns method of the Preprocessor class
+2021-08-23	10:37:37	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	10:37:37	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	10:37:37	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	10:37:37	Entered the load_model method of the File_Operation class
+2021-08-23	10:37:37	Model File svc loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	10:41:54	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:42:40	Entered the remove_columns method of the Preprocessor class
+2021-08-23	10:42:40	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	10:42:40	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	10:42:40	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	10:42:40	Entered the load_model method of the File_Operation class
+2021-08-23	10:42:40	Model File lgb loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	10:54:49	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:55:08	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	10:57:21	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	10:57:56	Entered the remove_columns method of the Preprocessor class
+2021-08-23	10:57:56	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	10:57:56	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	10:57:56	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	10:57:56	Entered the load_model method of the File_Operation class
+2021-08-23	10:57:56	Model File lgb loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	11:26:11	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	11:26:32	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed'), <Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	11:27:37	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	11:28:11	Entered the remove_columns method of the Preprocessor class
+2021-08-23	11:28:11	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	11:28:11	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:28:11	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:28:11	Entered the load_model method of the File_Operation class
+2021-08-23	11:28:11	Model File svc loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	11:31:12	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	11:31:56	Entered the remove_columns method of the Preprocessor class
+2021-08-23	11:31:56	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	11:31:56	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:31:56	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:31:56	Entered the load_model method of the File_Operation class
+2021-08-23	11:31:56	Model File lgb loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	11:36:34	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	11:36:51	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e
+2021-08-23	11:37:57	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	11:38:31	Entered the remove_columns method of the Preprocessor class
+2021-08-23	11:38:31	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	11:38:31	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:38:31	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:38:31	Entered the load_model method of the File_Operation class
+2021-08-23	11:38:31	Model File svc loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	11:42:35	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	11:43:18	Entered the remove_columns method of the Preprocessor class
+2021-08-23	11:43:18	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	11:43:18	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:43:18	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:43:18	Entered the load_model method of the File_Operation class
+2021-08-23	11:43:18	Model File lgb loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	11:44:23	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	11:44:56	Entered the remove_columns method of the Preprocessor class
+2021-08-23	11:44:56	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	11:44:56	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:44:56	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:44:56	Entered the load_model method of the File_Operation class
+2021-08-23	11:44:56	Model File lgb loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	11:45:56	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	11:46:33	Entered the remove_columns method of the Preprocessor class
+2021-08-23	11:46:33	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	11:46:33	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:46:33	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	11:46:33	Entered the load_model method of the File_Operation class
+2021-08-23	11:46:33	Model File lgb loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	12:31:07	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	12:31:07	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	12:31:07	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	12:31:07	BadRaw directory deleted before starting validation!!!
+2021-08-23	12:31:07	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	12:31:07	GoodRaw directory deleted successfully!!!
+2021-08-23	12:31:07	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	12:31:07	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	12:31:07	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	12:31:07	Column Length Validation Started!!
+2021-08-23	12:31:07	Column Length Validation Completed!!
+2021-08-23	12:31:07	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	12:31:07	Missing Values Validation Started!!
+2021-08-23	12:31:08	Entered datatransformation method of dataTransform class
+2021-08-23	12:31:08	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:31:19	Entered the get_key_space method of dBOperation class
+2021-08-23	12:31:19	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:31:26	Entered the deleteRecords method of dBOperation class
+2021-08-23	12:31:27	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:31:45	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	12:31:56	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	12:31:56	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	12:31:56	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	12:31:56	BadRaw directory deleted before starting validation!!!
+2021-08-23	12:31:57	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	12:31:57	GoodRaw directory deleted successfully!!!
+2021-08-23	12:31:57	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	12:31:57	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	12:31:57	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	12:31:57	Column Length Validation Started!!
+2021-08-23	12:31:57	Column Length Validation Completed!!
+2021-08-23	12:31:57	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	12:31:57	Missing Values Validation Started!!
+2021-08-23	12:31:57	Entered datatransformation method of dataTransform class
+2021-08-23	12:31:57	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:32:05	Entered the get_key_space method of dBOperation class
+2021-08-23	12:32:05	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:32:15	Entered the deleteRecords method of dBOperation class
+2021-08-23	12:32:15	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:32:24	Entered the create_table method of dBOperation class
+2021-08-23	12:32:24	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:32:32	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	12:32:32	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:33:36	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	12:33:36	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:33:46	File exported successfully!!!
+2021-08-23	12:33:46	Entered the get_data method of the Data_Getter class
+2021-08-23	12:33:47	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	12:33:47	Entered the remove_columns method of the Preprocessor class
+2021-08-23	12:33:47	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	12:33:47	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	12:33:47	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	12:33:47	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	12:33:47	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	12:33:47	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	12:33:47	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	12:33:47	Entered the get_best_model method of the Model_Finder class
+2021-08-23	12:33:47	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	12:33:47	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	12:34:33	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	12:35:04	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	12:35:04	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	12:35:32	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	12:35:32	Entered the save_model method of the File_Operation class
+2021-08-23	12:35:32	Model File gnb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	12:33:46	Start of Training
+2021-08-23	12:35:32	gnb Successfully trained and saved in project directory
+2021-08-23	12:35:32	Entered the save_model method of the File_Operation class
+2021-08-23	12:35:32	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	12:35:32	xgb Successfully trained and saved in project directory
+2021-08-23	12:35:32	Entered the save_model method of the File_Operation class
+2021-08-23	12:35:32	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-23	12:35:32	rf Successfully trained and saved in project directory
+2021-08-23	12:35:32	Entered the save_model method of the File_Operation class
+2021-08-23	12:35:32	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-23	12:35:32	svc Successfully trained and saved in project directory
+2021-08-23	12:35:32	Entered the save_model method of the File_Operation class
+2021-08-23	12:35:32	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	12:35:32	lgb Successfully trained and saved in project directory
+2021-08-23	12:35:32	Successful End of Training, sending json
+2021-08-23	12:41:29	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	12:41:29	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	12:41:29	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	12:41:29	BadRaw directory deleted before starting validation!!!
+2021-08-23	12:41:29	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	12:41:29	GoodRaw directory deleted successfully!!!
+2021-08-23	12:41:29	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	12:41:29	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	12:41:29	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	12:41:29	Column Length Validation Started!!
+2021-08-23	12:41:29	Column Length Validation Completed!!
+2021-08-23	12:41:29	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	12:41:29	Missing Values Validation Started!!
+2021-08-23	12:41:29	Entered datatransformation method of dataTransform class
+2021-08-23	12:41:29	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:41:36	Entered the get_key_space method of dBOperation class
+2021-08-23	12:41:36	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:41:43	Entered the deleteRecords method of dBOperation class
+2021-08-23	12:41:43	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:42:00	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	12:45:00	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	12:45:00	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	12:45:00	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	12:45:00	BadRaw directory deleted before starting validation!!!
+2021-08-23	12:45:00	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	12:45:00	GoodRaw directory deleted successfully!!!
+2021-08-23	12:45:00	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	12:45:00	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	12:45:00	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	12:45:00	Column Length Validation Started!!
+2021-08-23	12:45:00	Column Length Validation Completed!!
+2021-08-23	12:45:00	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	12:45:00	Missing Values Validation Started!!
+2021-08-23	12:45:00	Entered datatransformation method of dataTransform class
+2021-08-23	12:45:00	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:45:08	Entered the get_key_space method of dBOperation class
+2021-08-23	12:45:08	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:45:15	Entered the deleteRecords method of dBOperation class
+2021-08-23	12:45:15	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:45:23	Entered the create_table method of dBOperation class
+2021-08-23	12:45:23	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:45:32	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	12:45:32	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:46:34	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	12:46:34	Entered the cassandra_connection method of dBOperation class
+2021-08-23	12:46:41	File exported successfully!!!
+2021-08-23	12:46:41	Entered the get_data method of the Data_Getter class
+2021-08-23	12:46:41	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	12:46:41	Entered the remove_columns method of the Preprocessor class
+2021-08-23	12:46:41	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	12:46:41	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	12:46:41	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	12:46:41	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	12:46:41	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	12:46:41	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	12:46:41	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	12:46:41	Entered the get_best_model method of the Model_Finder class
+2021-08-23	12:46:41	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	12:46:42	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	12:47:22	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	12:47:53	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	12:47:53	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	12:48:16	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	12:48:16	Entered the save_model method of the File_Operation class
+2021-08-23	12:48:16	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	12:46:41	Start of Training
+2021-08-23	12:48:16	xgb Successfully trained and saved in project directory
+2021-08-23	12:48:16	Entered the save_model method of the File_Operation class
+2021-08-23	12:48:16	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-23	12:48:16	rf Successfully trained and saved in project directory
+2021-08-23	12:48:16	Entered the save_model method of the File_Operation class
+2021-08-23	12:48:16	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-23	12:48:16	svc Successfully trained and saved in project directory
+2021-08-23	12:48:16	Entered the save_model method of the File_Operation class
+2021-08-23	12:48:16	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	12:48:16	lgb Successfully trained and saved in project directory
+2021-08-23	12:48:16	Successful End of Training, sending json
+2021-08-23	13:00:11	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	13:00:27	Unsuccessful in executing deleteRecords method of the dBOperation_prediction class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	13:01:18	Entered the deleteRecords method of dBOperation_prediction class
+2021-08-23	13:01:53	Entered the remove_columns method of the Preprocessor class
+2021-08-23	13:01:53	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	13:01:53	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	13:01:53	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	13:01:53	Entered the load_model method of the File_Operation class
+2021-08-23	13:01:53	Model File svc loaded. Exited the load_model method of the Model_Finder class
+2021-08-23	13:06:55	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	13:06:55	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	13:06:55	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	13:06:55	BadRaw directory deleted before starting validation!!!
+2021-08-23	13:06:55	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	13:06:55	GoodRaw directory deleted successfully!!!
+2021-08-23	13:06:55	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	13:06:55	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	13:06:55	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	13:06:55	Column Length Validation Started!!
+2021-08-23	13:06:55	Column Length Validation Completed!!
+2021-08-23	13:06:55	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	13:06:55	Missing Values Validation Started!!
+2021-08-23	13:06:55	Entered datatransformation method of dataTransform class
+2021-08-23	13:06:55	Entered the cassandra_connection method of dBOperation class
+2021-08-23	13:07:03	Entered the get_key_space method of dBOperation class
+2021-08-23	13:07:03	Entered the cassandra_connection method of dBOperation class
+2021-08-23	13:07:12	Entered the deleteRecords method of dBOperation class
+2021-08-23	13:07:12	Entered the cassandra_connection method of dBOperation class
+2021-08-23	13:07:31	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e
+2021-08-23	13:07:40	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	13:07:40	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	13:07:40	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	13:07:40	BadRaw directory deleted before starting validation!!!
+2021-08-23	13:07:40	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	13:07:40	GoodRaw directory deleted successfully!!!
+2021-08-23	13:07:40	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	13:07:40	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	13:07:40	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	13:07:40	Column Length Validation Started!!
+2021-08-23	13:07:40	Column Length Validation Completed!!
+2021-08-23	13:07:40	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	13:07:40	Missing Values Validation Started!!
+2021-08-23	13:07:40	Entered datatransformation method of dataTransform class
+2021-08-23	13:07:40	Entered the cassandra_connection method of dBOperation class
+2021-08-23	13:07:48	Entered the get_key_space method of dBOperation class
+2021-08-23	13:07:48	Entered the cassandra_connection method of dBOperation class
+2021-08-23	13:07:58	Entered the deleteRecords method of dBOperation class
+2021-08-23	13:07:58	Entered the cassandra_connection method of dBOperation class
+2021-08-23	13:08:06	Entered the create_table method of dBOperation class
+2021-08-23	13:08:06	Entered the cassandra_connection method of dBOperation class
+2021-08-23	13:08:14	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	13:08:14	Entered the cassandra_connection method of dBOperation class
+2021-08-23	13:09:16	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	13:09:16	Entered the cassandra_connection method of dBOperation class
+2021-08-23	13:09:24	File exported successfully!!!
+2021-08-23	13:09:24	Entered the get_data method of the Data_Getter class
+2021-08-23	13:09:24	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	13:09:24	Entered the remove_columns method of the Preprocessor class
+2021-08-23	13:09:24	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	13:09:24	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	13:09:24	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	13:09:24	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	13:09:24	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	13:09:24	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	13:09:25	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	13:09:25	Entered the get_best_model method of the Model_Finder class
+2021-08-23	13:09:25	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	13:09:25	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	13:10:05	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	13:10:32	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	13:10:32	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	13:10:55	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	13:10:55	Entered the save_model method of the File_Operation class
+2021-08-23	13:10:55	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	13:09:24	Start of Training
+2021-08-23	13:10:55	xgb Successfully trained and saved in project directory
+2021-08-23	13:10:55	Entered the save_model method of the File_Operation class
+2021-08-23	13:10:55	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-23	13:10:55	svc Successfully trained and saved in project directory
+2021-08-23	13:10:55	Entered the save_model method of the File_Operation class
+2021-08-23	13:10:55	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	13:10:55	lgb Successfully trained and saved in project directory
+2021-08-23	13:10:55	Successful End of Training, sending json
+2021-08-23	14:11:50	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	14:11:50	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	14:11:50	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:11:50	BadRaw directory deleted before starting validation!!!
+2021-08-23	14:11:50	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:11:50	GoodRaw directory deleted successfully!!!
+2021-08-23	14:11:50	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	14:11:50	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	14:11:50	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	14:11:50	Column Length Validation Started!!
+2021-08-23	14:11:50	Column Length Validation Completed!!
+2021-08-23	14:11:50	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	14:11:50	Missing Values Validation Started!!
+2021-08-23	14:11:50	Entered datatransformation method of dataTransform class
+2021-08-23	14:11:50	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:11:58	Entered the get_key_space method of dBOperation class
+2021-08-23	14:11:58	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:12:07	Entered the deleteRecords method of dBOperation class
+2021-08-23	14:12:07	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:12:24	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e us-east1>: ConnectionException('Host has been marked down or removed'), <Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	14:12:39	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	14:12:39	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	14:12:39	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:12:39	BadRaw directory deleted before starting validation!!!
+2021-08-23	14:12:39	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:12:39	GoodRaw directory deleted successfully!!!
+2021-08-23	14:12:39	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	14:12:39	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	14:12:39	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	14:12:39	Column Length Validation Started!!
+2021-08-23	14:12:39	Column Length Validation Completed!!
+2021-08-23	14:12:39	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	14:12:39	Missing Values Validation Started!!
+2021-08-23	14:12:39	Entered datatransformation method of dataTransform class
+2021-08-23	14:12:39	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:12:47	Entered the get_key_space method of dBOperation class
+2021-08-23	14:12:47	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:12:55	Entered the deleteRecords method of dBOperation class
+2021-08-23	14:12:55	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:13:02	Entered the create_table method of dBOperation class
+2021-08-23	14:13:02	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:13:10	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	14:13:10	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:14:11	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	14:14:11	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:14:20	File exported successfully!!!
+2021-08-23	14:14:20	Entered the get_data method of the Data_Getter class
+2021-08-23	14:14:21	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	14:14:21	Entered the remove_columns method of the Preprocessor class
+2021-08-23	14:14:21	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	14:14:21	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	14:14:21	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	14:14:21	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:14:21	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:14:21	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:14:21	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:14:21	Entered the get_best_model method of the Model_Finder class
+2021-08-23	14:14:21	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	14:14:21	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	14:14:59	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	14:15:25	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	14:15:25	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	14:15:48	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	14:15:48	Entered the save_model method of the File_Operation class
+2021-08-23	14:15:48	Model File gnb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:14:20	Start of Training
+2021-08-23	14:15:48	gnb Successfully trained and saved in project directory
+2021-08-23	14:15:48	Entered the save_model method of the File_Operation class
+2021-08-23	14:15:48	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:15:48	xgb Successfully trained and saved in project directory
+2021-08-23	14:15:48	Entered the save_model method of the File_Operation class
+2021-08-23	14:15:48	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:15:48	rf Successfully trained and saved in project directory
+2021-08-23	14:15:48	Entered the save_model method of the File_Operation class
+2021-08-23	14:15:48	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:15:48	svc Successfully trained and saved in project directory
+2021-08-23	14:15:48	Entered the save_model method of the File_Operation class
+2021-08-23	14:15:48	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:15:48	lgb Successfully trained and saved in project directory
+2021-08-23	14:15:48	Successful End of Training, sending json
+2021-08-23	14:23:46	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	14:23:46	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	14:23:46	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:23:46	BadRaw directory deleted before starting validation!!!
+2021-08-23	14:23:46	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:23:46	GoodRaw directory deleted successfully!!!
+2021-08-23	14:23:46	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	14:23:46	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	14:23:46	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	14:23:46	Column Length Validation Started!!
+2021-08-23	14:23:46	Column Length Validation Completed!!
+2021-08-23	14:23:46	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	14:23:46	Missing Values Validation Started!!
+2021-08-23	14:23:46	Entered datatransformation method of dataTransform class
+2021-08-23	14:23:46	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:23:53	Entered the get_key_space method of dBOperation class
+2021-08-23	14:23:53	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:24:00	Entered the deleteRecords method of dBOperation class
+2021-08-23	14:24:00	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:24:17	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e
+2021-08-23	14:24:40	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	14:24:40	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	14:24:40	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:24:40	BadRaw directory deleted before starting validation!!!
+2021-08-23	14:24:40	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:24:40	GoodRaw directory deleted successfully!!!
+2021-08-23	14:24:40	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	14:24:40	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	14:24:40	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	14:24:40	Column Length Validation Started!!
+2021-08-23	14:24:40	Column Length Validation Completed!!
+2021-08-23	14:24:40	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	14:24:40	Missing Values Validation Started!!
+2021-08-23	14:24:40	Entered datatransformation method of dataTransform class
+2021-08-23	14:24:40	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:24:48	Entered the get_key_space method of dBOperation class
+2021-08-23	14:24:48	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:24:56	Entered the deleteRecords method of dBOperation class
+2021-08-23	14:24:56	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:25:03	Entered the create_table method of dBOperation class
+2021-08-23	14:25:03	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:25:12	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	14:25:12	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:26:16	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	14:26:16	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:26:26	File exported successfully!!!
+2021-08-23	14:26:26	Entered the get_data method of the Data_Getter class
+2021-08-23	14:26:26	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	14:26:26	Entered the remove_columns method of the Preprocessor class
+2021-08-23	14:26:26	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	14:26:26	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	14:26:26	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	14:26:26	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:26:26	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:26:26	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:26:26	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:26:26	Entered the get_best_model method of the Model_Finder class
+2021-08-23	14:26:26	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	14:26:27	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	14:27:07	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	14:27:37	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	14:27:38	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	14:28:04	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	14:28:04	Entered the save_model method of the File_Operation class
+2021-08-23	14:28:04	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:26:26	Start of Training
+2021-08-23	14:28:04	xgb Successfully trained and saved in project directory
+2021-08-23	14:28:04	Entered the save_model method of the File_Operation class
+2021-08-23	14:28:04	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:28:04	rf Successfully trained and saved in project directory
+2021-08-23	14:28:04	Entered the save_model method of the File_Operation class
+2021-08-23	14:28:04	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:28:04	svc Successfully trained and saved in project directory
+2021-08-23	14:28:04	Successful End of Training, sending json
+2021-08-23	14:32:18	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	14:32:18	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	14:32:18	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:32:18	BadRaw directory deleted before starting validation!!!
+2021-08-23	14:32:18	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:32:18	GoodRaw directory deleted successfully!!!
+2021-08-23	14:32:18	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	14:32:18	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	14:32:18	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	14:32:18	Column Length Validation Started!!
+2021-08-23	14:32:18	Column Length Validation Completed!!
+2021-08-23	14:32:18	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	14:32:18	Missing Values Validation Started!!
+2021-08-23	14:32:18	Entered datatransformation method of dataTransform class
+2021-08-23	14:32:18	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:32:26	Entered the get_key_space method of dBOperation class
+2021-08-23	14:32:26	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:32:35	Entered the deleteRecords method of dBOperation class
+2021-08-23	14:32:35	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:32:54	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3
+2021-08-23	14:33:08	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	14:33:08	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	14:33:08	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:33:08	BadRaw directory deleted before starting validation!!!
+2021-08-23	14:33:08	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:33:08	GoodRaw directory deleted successfully!!!
+2021-08-23	14:33:08	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	14:33:08	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	14:33:08	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	14:33:08	Column Length Validation Started!!
+2021-08-23	14:33:08	Column Length Validation Completed!!
+2021-08-23	14:33:08	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	14:33:08	Missing Values Validation Started!!
+2021-08-23	14:33:08	Entered datatransformation method of dataTransform class
+2021-08-23	14:33:08	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:33:17	Entered the get_key_space method of dBOperation class
+2021-08-23	14:33:17	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:34:17	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	14:34:17	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	14:34:17	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:34:17	BadRaw directory deleted before starting validation!!!
+2021-08-23	14:34:17	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:34:17	GoodRaw directory deleted successfully!!!
+2021-08-23	14:34:17	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	14:34:17	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	14:34:17	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	14:34:17	Column Length Validation Started!!
+2021-08-23	14:34:17	Column Length Validation Completed!!
+2021-08-23	14:34:17	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	14:34:17	Missing Values Validation Started!!
+2021-08-23	14:34:17	Entered datatransformation method of dataTransform class
+2021-08-23	14:34:17	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:34:26	Entered the get_key_space method of dBOperation class
+2021-08-23	14:34:26	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:34:34	Entered the deleteRecords method of dBOperation class
+2021-08-23	14:34:34	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:34:41	Entered the create_table method of dBOperation class
+2021-08-23	14:34:41	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:34:50	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	14:34:50	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:35:55	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	14:35:55	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:36:08	File exported successfully!!!
+2021-08-23	14:36:08	Entered the get_data method of the Data_Getter class
+2021-08-23	14:36:08	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	14:36:08	Entered the remove_columns method of the Preprocessor class
+2021-08-23	14:36:08	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	14:36:08	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	14:36:08	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	14:36:08	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:36:09	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:36:09	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:36:09	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:36:09	Entered the get_best_model method of the Model_Finder class
+2021-08-23	14:36:09	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	14:36:09	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	14:37:09	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	14:37:35	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	14:37:35	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	14:37:59	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	14:37:59	Entered the save_model method of the File_Operation class
+2021-08-23	14:37:59	Model File gnb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:36:08	Start of Training
+2021-08-23	14:37:59	gnb Successfully trained and saved in project directory
+2021-08-23	14:37:59	Entered the save_model method of the File_Operation class
+2021-08-23	14:37:59	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:37:59	xgb Successfully trained and saved in project directory
+2021-08-23	14:37:59	Entered the save_model method of the File_Operation class
+2021-08-23	14:37:59	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:37:59	rf Successfully trained and saved in project directory
+2021-08-23	14:37:59	Entered the save_model method of the File_Operation class
+2021-08-23	14:38:00	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:38:00	svc Successfully trained and saved in project directory
+2021-08-23	14:38:00	Entered the save_model method of the File_Operation class
+2021-08-23	14:38:00	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:38:00	lgb Successfully trained and saved in project directory
+2021-08-23	14:38:00	Successful End of Training, sending json
+2021-08-23	14:44:01	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	14:44:01	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	14:44:01	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:44:01	BadRaw directory deleted before starting validation!!!
+2021-08-23	14:44:01	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:44:01	GoodRaw directory deleted successfully!!!
+2021-08-23	14:44:01	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	14:44:01	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	14:44:01	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	14:44:01	Column Length Validation Started!!
+2021-08-23	14:44:01	Column Length Validation Completed!!
+2021-08-23	14:44:01	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	14:44:01	Missing Values Validation Started!!
+2021-08-23	14:44:01	Entered datatransformation method of dataTransform class
+2021-08-23	14:44:01	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:44:09	Entered the get_key_space method of dBOperation class
+2021-08-23	14:44:09	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:44:16	Entered the deleteRecords method of dBOperation class
+2021-08-23	14:44:16	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:44:33	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	14:44:45	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	14:44:45	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	14:44:45	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:44:45	BadRaw directory deleted before starting validation!!!
+2021-08-23	14:44:45	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	14:44:45	GoodRaw directory deleted successfully!!!
+2021-08-23	14:44:45	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	14:44:45	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	14:44:45	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	14:44:45	Column Length Validation Started!!
+2021-08-23	14:44:45	Column Length Validation Completed!!
+2021-08-23	14:44:45	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	14:44:45	Missing Values Validation Started!!
+2021-08-23	14:44:45	Entered datatransformation method of dataTransform class
+2021-08-23	14:44:45	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:44:53	Entered the get_key_space method of dBOperation class
+2021-08-23	14:44:53	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:45:00	Entered the deleteRecords method of dBOperation class
+2021-08-23	14:45:00	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:45:10	Entered the create_table method of dBOperation class
+2021-08-23	14:45:10	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:45:18	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	14:45:18	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:46:19	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	14:46:19	Entered the cassandra_connection method of dBOperation class
+2021-08-23	14:46:29	File exported successfully!!!
+2021-08-23	14:46:29	Entered the get_data method of the Data_Getter class
+2021-08-23	14:46:29	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	14:46:29	Entered the remove_columns method of the Preprocessor class
+2021-08-23	14:46:29	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	14:46:29	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	14:46:29	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	14:46:29	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:46:29	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:46:29	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:46:29	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	14:46:29	Entered the get_best_model method of the Model_Finder class
+2021-08-23	14:46:29	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	14:46:30	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	14:47:15	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	14:47:52	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	14:47:53	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	14:48:19	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	14:48:19	Entered the save_model method of the File_Operation class
+2021-08-23	14:48:19	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:46:29	Start of Training
+2021-08-23	14:48:19	xgb Successfully trained and saved in project directory
+2021-08-23	14:48:19	Entered the save_model method of the File_Operation class
+2021-08-23	14:48:19	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:48:19	svc Successfully trained and saved in project directory
+2021-08-23	14:48:19	Entered the save_model method of the File_Operation class
+2021-08-23	14:48:19	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	14:48:19	lgb Successfully trained and saved in project directory
+2021-08-23	14:48:19	Successful End of Training, sending json
+2021-08-23	15:15:24	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	15:15:24	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	15:15:24	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:15:24	BadRaw directory deleted before starting validation!!!
+2021-08-23	15:15:24	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:15:24	GoodRaw directory deleted successfully!!!
+2021-08-23	15:15:24	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	15:15:24	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	15:15:24	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	15:15:24	Column Length Validation Started!!
+2021-08-23	15:15:24	Column Length Validation Completed!!
+2021-08-23	15:15:24	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	15:15:24	Missing Values Validation Started!!
+2021-08-23	15:15:24	Entered datatransformation method of dataTransform class
+2021-08-23	15:15:25	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:15:31	Entered the get_key_space method of dBOperation class
+2021-08-23	15:15:31	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:15:38	Entered the deleteRecords method of dBOperation class
+2021-08-23	15:15:38	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:15:57	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3
+2021-08-23	15:17:13	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	15:17:13	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	15:17:13	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:17:13	BadRaw directory deleted before starting validation!!!
+2021-08-23	15:17:13	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:17:13	GoodRaw directory deleted successfully!!!
+2021-08-23	15:17:13	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	15:17:13	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	15:17:13	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	15:17:13	Column Length Validation Started!!
+2021-08-23	15:17:13	Column Length Validation Completed!!
+2021-08-23	15:17:13	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	15:17:13	Missing Values Validation Started!!
+2021-08-23	15:17:13	Entered datatransformation method of dataTransform class
+2021-08-23	15:17:13	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:17:20	Entered the get_key_space method of dBOperation class
+2021-08-23	15:17:20	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:17:28	Entered the deleteRecords method of dBOperation class
+2021-08-23	15:17:28	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:17:38	Entered the create_table method of dBOperation class
+2021-08-23	15:17:38	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:17:46	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	15:17:46	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:18:48	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	15:18:48	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:18:56	File exported successfully!!!
+2021-08-23	15:18:56	Entered the get_data method of the Data_Getter class
+2021-08-23	15:18:56	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	15:18:56	Entered the remove_columns method of the Preprocessor class
+2021-08-23	15:18:56	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	15:18:56	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	15:18:56	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	15:18:56	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:18:56	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:18:56	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:18:56	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:18:56	Entered the get_best_model method of the Model_Finder class
+2021-08-23	15:18:56	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	15:18:56	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	15:19:37	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	15:20:10	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	15:20:11	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	15:20:34	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	15:20:35	Entered the save_model method of the File_Operation class
+2021-08-23	15:20:35	Model File gnb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	15:18:56	Start of Training
+2021-08-23	15:20:35	gnb Successfully trained and saved in project directory
+2021-08-23	15:20:35	Entered the save_model method of the File_Operation class
+2021-08-23	15:20:35	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	15:20:35	xgb Successfully trained and saved in project directory
+2021-08-23	15:20:35	Entered the save_model method of the File_Operation class
+2021-08-23	15:20:35	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-23	15:20:35	rf Successfully trained and saved in project directory
+2021-08-23	15:20:35	Entered the save_model method of the File_Operation class
+2021-08-23	15:20:35	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-23	15:20:35	svc Successfully trained and saved in project directory
+2021-08-23	15:20:35	Entered the save_model method of the File_Operation class
+2021-08-23	15:20:35	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	15:20:35	lgb Successfully trained and saved in project directory
+2021-08-23	15:20:35	Successful End of Training, sending json
+2021-08-23	15:41:07	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	15:41:07	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	15:41:07	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:41:07	BadRaw directory deleted before starting validation!!!
+2021-08-23	15:41:07	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:41:07	GoodRaw directory deleted successfully!!!
+2021-08-23	15:41:07	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	15:41:07	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	15:41:07	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	15:41:07	Column Length Validation Started!!
+2021-08-23	15:41:07	Column Length Validation Completed!!
+2021-08-23	15:41:07	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	15:41:07	Missing Values Validation Started!!
+2021-08-23	15:41:07	Entered datatransformation method of dataTransform class
+2021-08-23	15:41:07	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:41:14	Entered the get_key_space method of dBOperation class
+2021-08-23	15:41:14	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:41:21	Entered the deleteRecords method of dBOperation class
+2021-08-23	15:41:21	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:41:41	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3
+2021-08-23	15:41:45	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	15:41:45	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	15:41:45	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:41:45	BadRaw directory deleted before starting validation!!!
+2021-08-23	15:41:45	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:41:45	GoodRaw directory deleted successfully!!!
+2021-08-23	15:41:45	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	15:41:45	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	15:41:45	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	15:41:45	Column Length Validation Started!!
+2021-08-23	15:41:45	Column Length Validation Completed!!
+2021-08-23	15:41:45	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	15:41:45	Missing Values Validation Started!!
+2021-08-23	15:41:45	Entered datatransformation method of dataTransform class
+2021-08-23	15:41:45	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:41:53	Entered the get_key_space method of dBOperation class
+2021-08-23	15:41:53	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:42:00	Entered the deleteRecords method of dBOperation class
+2021-08-23	15:42:00	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:42:08	Entered the create_table method of dBOperation class
+2021-08-23	15:42:08	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:42:19	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	15:42:19	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:43:22	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	15:43:22	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:43:32	File exported successfully!!!
+2021-08-23	15:43:32	Entered the get_data method of the Data_Getter class
+2021-08-23	15:43:32	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	15:43:32	Entered the remove_columns method of the Preprocessor class
+2021-08-23	15:43:32	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	15:43:32	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	15:43:32	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	15:43:32	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:43:32	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:43:32	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:43:32	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:43:32	Entered the get_best_model method of the Model_Finder class
+2021-08-23	15:43:32	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	15:43:33	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	15:44:16	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	15:44:44	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	15:44:44	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	15:45:08	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	15:45:08	Entered the save_model method of the File_Operation class
+2021-08-23	15:45:08	Model File gnb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	15:43:32	Start of Training
+2021-08-23	15:45:08	gnb Successfully trained and saved in project directory
+2021-08-23	15:45:08	Successful End of Training, sending json
+2021-08-23	15:45:36	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	15:45:36	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	15:45:36	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:45:36	BadRaw directory deleted before starting validation!!!
+2021-08-23	15:45:36	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:45:36	GoodRaw directory deleted successfully!!!
+2021-08-23	15:45:36	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	15:45:36	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	15:45:36	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	15:45:36	Column Length Validation Started!!
+2021-08-23	15:45:36	Column Length Validation Completed!!
+2021-08-23	15:45:36	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	15:45:36	Missing Values Validation Started!!
+2021-08-23	15:45:36	Entered datatransformation method of dataTransform class
+2021-08-23	15:45:36	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:45:44	Entered the get_key_space method of dBOperation class
+2021-08-23	15:45:44	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:45:53	Entered the deleteRecords method of dBOperation class
+2021-08-23	15:45:53	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:46:08	Entered the create_table method of dBOperation class
+2021-08-23	15:46:08	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:46:50	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	15:46:50	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	15:46:50	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:46:50	BadRaw directory deleted before starting validation!!!
+2021-08-23	15:46:50	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:46:50	GoodRaw directory deleted successfully!!!
+2021-08-23	15:46:50	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	15:46:51	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	15:46:51	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	15:46:51	Column Length Validation Started!!
+2021-08-23	15:46:51	Column Length Validation Completed!!
+2021-08-23	15:46:51	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	15:46:51	Missing Values Validation Started!!
+2021-08-23	15:46:51	Entered datatransformation method of dataTransform class
+2021-08-23	15:46:51	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:46:57	Entered the get_key_space method of dBOperation class
+2021-08-23	15:46:57	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:47:06	Entered the deleteRecords method of dBOperation class
+2021-08-23	15:47:06	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:47:13	Entered the create_table method of dBOperation class
+2021-08-23	15:47:13	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:47:22	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	15:47:22	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:48:26	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	15:48:26	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:48:34	File exported successfully!!!
+2021-08-23	15:48:34	Entered the get_data method of the Data_Getter class
+2021-08-23	15:48:34	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	15:48:34	Entered the remove_columns method of the Preprocessor class
+2021-08-23	15:48:34	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	15:48:34	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	15:48:34	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	15:48:34	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:48:34	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:48:34	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:48:34	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:48:34	Entered the get_best_model method of the Model_Finder class
+2021-08-23	15:48:34	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	15:48:35	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	15:49:16	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	15:49:45	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	15:49:45	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	15:50:09	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	15:50:09	Exception occured in best_model_scoring method of the Model_Finder class. Exception message:  ''
+2021-08-23	15:50:09	Model Selection Failed. Exited the best_model_scoring method of the Model_Finder class
+2021-08-23	15:48:34	Start of Training
+2021-08-23	15:50:09	Exception occured in trainingModel method of the trainModel class. Exception message:  object of type 'NoneType' has no len()
+2021-08-23	15:50:09	Model Selection Failed. Exited the trainingModel method of the trainModel class
+2021-08-23	15:50:48	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	15:50:48	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	15:50:48	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:50:48	BadRaw directory deleted before starting validation!!!
+2021-08-23	15:50:48	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:50:48	GoodRaw directory deleted successfully!!!
+2021-08-23	15:50:48	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	15:50:48	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	15:50:48	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	15:50:48	Column Length Validation Started!!
+2021-08-23	15:50:48	Column Length Validation Completed!!
+2021-08-23	15:50:48	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	15:50:48	Missing Values Validation Started!!
+2021-08-23	15:50:48	Entered datatransformation method of dataTransform class
+2021-08-23	15:50:48	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:50:57	Entered the get_key_space method of dBOperation class
+2021-08-23	15:50:57	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:51:07	Entered the deleteRecords method of dBOperation class
+2021-08-23	15:51:07	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:51:26	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	15:52:06	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	15:52:06	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	15:52:06	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:52:06	BadRaw directory deleted before starting validation!!!
+2021-08-23	15:52:06	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	15:52:06	GoodRaw directory deleted successfully!!!
+2021-08-23	15:52:06	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	15:52:06	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	15:52:06	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	15:52:06	Column Length Validation Started!!
+2021-08-23	15:52:06	Column Length Validation Completed!!
+2021-08-23	15:52:06	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	15:52:06	Missing Values Validation Started!!
+2021-08-23	15:52:06	Entered datatransformation method of dataTransform class
+2021-08-23	15:52:06	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:52:14	Entered the get_key_space method of dBOperation class
+2021-08-23	15:52:14	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:52:21	Entered the deleteRecords method of dBOperation class
+2021-08-23	15:52:21	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:52:29	Entered the create_table method of dBOperation class
+2021-08-23	15:52:29	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:52:39	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	15:52:39	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:53:41	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	15:53:41	Entered the cassandra_connection method of dBOperation class
+2021-08-23	15:53:48	File exported successfully!!!
+2021-08-23	15:53:48	Entered the get_data method of the Data_Getter class
+2021-08-23	15:53:48	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	15:53:48	Entered the remove_columns method of the Preprocessor class
+2021-08-23	15:53:48	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	15:53:48	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	15:53:48	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	15:53:48	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:53:48	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:53:48	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:53:48	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	15:53:48	Entered the get_best_model method of the Model_Finder class
+2021-08-23	15:53:48	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	15:53:49	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	15:54:14	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	15:54:42	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	15:54:42	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	15:55:06	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	15:55:06	Exception occured in best_model_scoring method of the Model_Finder class. Exception message:  ''
+2021-08-23	15:55:06	Model Selection Failed. Exited the best_model_scoring method of the Model_Finder class
+2021-08-23	15:53:48	Start of Training
+2021-08-23	15:55:06	Exception occured in trainingModel method of the trainModel class. Exception message:  object of type 'NoneType' has no len()
+2021-08-23	15:55:06	Model Selection Failed. Exited the trainingModel method of the trainModel class
+2021-08-23	16:16:25	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	16:16:25	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	16:16:25	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:16:25	BadRaw directory deleted before starting validation!!!
+2021-08-23	16:16:25	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:16:25	GoodRaw directory deleted successfully!!!
+2021-08-23	16:16:25	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	16:16:25	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	16:16:25	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	16:16:25	Column Length Validation Started!!
+2021-08-23	16:16:25	Column Length Validation Completed!!
+2021-08-23	16:16:25	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	16:16:25	Missing Values Validation Started!!
+2021-08-23	16:16:25	Entered datatransformation method of dataTransform class
+2021-08-23	16:16:25	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:16:33	Entered the get_key_space method of dBOperation class
+2021-08-23	16:16:33	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:16:40	Entered the deleteRecords method of dBOperation class
+2021-08-23	16:16:40	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:16:59	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	16:17:12	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	16:17:12	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	16:17:12	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:17:12	BadRaw directory deleted before starting validation!!!
+2021-08-23	16:17:12	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:17:12	GoodRaw directory deleted successfully!!!
+2021-08-23	16:17:12	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	16:17:12	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	16:17:12	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	16:17:12	Column Length Validation Started!!
+2021-08-23	16:17:12	Column Length Validation Completed!!
+2021-08-23	16:17:12	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	16:17:12	Missing Values Validation Started!!
+2021-08-23	16:17:12	Entered datatransformation method of dataTransform class
+2021-08-23	16:17:12	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:17:20	Entered the get_key_space method of dBOperation class
+2021-08-23	16:17:20	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:17:27	Entered the deleteRecords method of dBOperation class
+2021-08-23	16:17:27	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:17:36	Entered the create_table method of dBOperation class
+2021-08-23	16:17:36	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:17:46	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	16:17:46	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:18:45	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	16:18:45	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:18:55	File exported successfully!!!
+2021-08-23	16:18:55	Entered the get_data method of the Data_Getter class
+2021-08-23	16:18:55	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	16:18:55	Entered the remove_columns method of the Preprocessor class
+2021-08-23	16:18:55	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	16:18:55	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	16:18:55	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	16:18:55	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:18:55	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:18:55	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:18:55	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:18:55	Entered the get_best_model method of the Model_Finder class
+2021-08-23	16:18:55	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	16:18:56	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	16:19:35	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	16:20:03	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	16:20:03	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	16:20:27	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	16:20:27	Exception occured in best_model_scoring method of the Model_Finder class. Exception message:  ''
+2021-08-23	16:20:27	Model Selection Failed. Exited the best_model_scoring method of the Model_Finder class
+2021-08-23	16:18:55	Start of Training
+2021-08-23	16:20:27	Exception occured in trainingModel method of the trainModel class. Exception message:  object of type 'NoneType' has no len()
+2021-08-23	16:20:27	Model Selection Failed. Exited the trainingModel method of the trainModel class
+2021-08-23	16:21:34	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	16:21:34	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	16:21:34	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:21:34	BadRaw directory deleted before starting validation!!!
+2021-08-23	16:21:34	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:21:34	GoodRaw directory deleted successfully!!!
+2021-08-23	16:21:34	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	16:21:34	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	16:21:34	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	16:21:34	Column Length Validation Started!!
+2021-08-23	16:21:34	Column Length Validation Completed!!
+2021-08-23	16:21:34	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	16:21:34	Missing Values Validation Started!!
+2021-08-23	16:21:34	Entered datatransformation method of dataTransform class
+2021-08-23	16:21:34	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:21:43	Entered the get_key_space method of dBOperation class
+2021-08-23	16:21:43	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:21:52	Entered the deleteRecords method of dBOperation class
+2021-08-23	16:21:52	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:22:12	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	16:23:26	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	16:23:26	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	16:23:26	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:23:26	BadRaw directory deleted before starting validation!!!
+2021-08-23	16:23:26	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:23:26	GoodRaw directory deleted successfully!!!
+2021-08-23	16:23:26	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	16:23:26	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	16:23:26	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	16:23:26	Column Length Validation Started!!
+2021-08-23	16:23:26	Column Length Validation Completed!!
+2021-08-23	16:23:26	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	16:23:26	Missing Values Validation Started!!
+2021-08-23	16:23:26	Entered datatransformation method of dataTransform class
+2021-08-23	16:23:26	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:23:34	Entered the get_key_space method of dBOperation class
+2021-08-23	16:23:34	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:23:43	Entered the deleteRecords method of dBOperation class
+2021-08-23	16:23:43	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:23:50	Entered the create_table method of dBOperation class
+2021-08-23	16:23:50	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:23:59	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	16:23:59	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:25:01	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	16:25:01	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:25:10	File exported successfully!!!
+2021-08-23	16:25:10	Entered the get_data method of the Data_Getter class
+2021-08-23	16:25:10	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	16:25:10	Entered the remove_columns method of the Preprocessor class
+2021-08-23	16:25:10	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	16:25:10	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	16:25:10	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	16:25:10	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:25:10	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:25:10	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:25:10	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:25:10	Entered the get_best_model method of the Model_Finder class
+2021-08-23	16:25:10	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	16:25:10	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	16:25:58	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	16:26:32	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	16:26:33	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	16:26:58	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	16:26:58	Entered the save_model method of the File_Operation class
+2021-08-23	16:26:58	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	16:25:10	Start of Training
+2021-08-23	16:26:58	xgb Successfully trained and saved in project directory
+2021-08-23	16:26:58	Entered the save_model method of the File_Operation class
+2021-08-23	16:26:58	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-23	16:26:58	svc Successfully trained and saved in project directory
+2021-08-23	16:26:58	Entered the save_model method of the File_Operation class
+2021-08-23	16:26:58	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	16:26:58	lgb Successfully trained and saved in project directory
+2021-08-23	16:26:58	Successful End of Training, sending json
+2021-08-23	16:30:18	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	16:30:18	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	16:30:18	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:30:18	BadRaw directory deleted before starting validation!!!
+2021-08-23	16:30:18	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:30:18	GoodRaw directory deleted successfully!!!
+2021-08-23	16:30:18	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	16:30:18	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	16:30:18	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	16:30:18	Column Length Validation Started!!
+2021-08-23	16:30:18	Column Length Validation Completed!!
+2021-08-23	16:30:18	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	16:30:18	Missing Values Validation Started!!
+2021-08-23	16:30:18	Entered datatransformation method of dataTransform class
+2021-08-23	16:30:18	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:30:26	Entered the get_key_space method of dBOperation class
+2021-08-23	16:30:26	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:30:33	Entered the deleteRecords method of dBOperation class
+2021-08-23	16:30:33	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:30:50	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={'Connection defunct by heartbeat': 'Client request timeout. See Session.execute[_async](timeout)'}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:096cf2cd-ec1f-47f4-bc3d-5a8b2d08603e
+2021-08-23	16:32:35	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	16:32:35	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	16:32:35	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:32:35	BadRaw directory deleted before starting validation!!!
+2021-08-23	16:32:35	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:32:35	GoodRaw directory deleted successfully!!!
+2021-08-23	16:32:35	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	16:32:35	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	16:32:36	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	16:32:36	Column Length Validation Started!!
+2021-08-23	16:32:36	Column Length Validation Completed!!
+2021-08-23	16:32:36	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	16:32:36	Missing Values Validation Started!!
+2021-08-23	16:32:36	Entered datatransformation method of dataTransform class
+2021-08-23	16:32:36	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:32:44	Entered the get_key_space method of dBOperation class
+2021-08-23	16:32:44	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:32:53	Entered the deleteRecords method of dBOperation class
+2021-08-23	16:32:53	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:33:00	Entered the create_table method of dBOperation class
+2021-08-23	16:33:00	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:33:09	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	16:33:09	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:34:11	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	16:34:11	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:34:18	File exported successfully!!!
+2021-08-23	16:34:18	Entered the get_data method of the Data_Getter class
+2021-08-23	16:34:18	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	16:34:18	Entered the remove_columns method of the Preprocessor class
+2021-08-23	16:34:18	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	16:34:18	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	16:34:18	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	16:34:18	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:34:18	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:34:19	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:34:19	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	16:34:19	Entered the get_best_model method of the Model_Finder class
+2021-08-23	16:34:19	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	16:34:19	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	16:35:00	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	16:35:34	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	16:35:34	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	16:35:57	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	16:35:57	Entered the save_model method of the File_Operation class
+2021-08-23	16:35:57	Model File gnb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	16:34:18	Start of Training
+2021-08-23	16:35:57	gnb Successfully trained and saved in project directory
+2021-08-23	16:35:57	Entered the save_model method of the File_Operation class
+2021-08-23	16:35:57	Model File xgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	16:35:57	xgb Successfully trained and saved in project directory
+2021-08-23	16:35:57	Entered the save_model method of the File_Operation class
+2021-08-23	16:35:57	Model File rf saved. Exited the save_model method of the Model_Finder class
+2021-08-23	16:35:57	rf Successfully trained and saved in project directory
+2021-08-23	16:35:57	Entered the save_model method of the File_Operation class
+2021-08-23	16:35:57	Model File svc saved. Exited the save_model method of the Model_Finder class
+2021-08-23	16:35:57	svc Successfully trained and saved in project directory
+2021-08-23	16:35:57	Entered the save_model method of the File_Operation class
+2021-08-23	16:35:57	Model File lgb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	16:35:57	lgb Successfully trained and saved in project directory
+2021-08-23	16:35:58	Successful End of Training, sending json
+2021-08-23	16:41:53	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	16:41:53	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	16:41:53	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:41:53	BadRaw directory deleted before starting validation!!!
+2021-08-23	16:41:53	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	16:41:53	GoodRaw directory deleted successfully!!!
+2021-08-23	16:41:53	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	16:41:53	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	16:41:53	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	16:41:53	Column Length Validation Started!!
+2021-08-23	16:41:53	Column Length Validation Completed!!
+2021-08-23	16:41:53	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	16:41:53	Missing Values Validation Started!!
+2021-08-23	16:41:53	Entered datatransformation method of dataTransform class
+2021-08-23	16:41:53	Entered the cassandra_connection method of dBOperation class
+2021-08-23	16:42:01	Entered the get_key_space method of dBOperation class
+2021-08-23	16:42:01	Entered the cassandra_connection method of dBOperation class
+2021-08-23	17:16:54	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	17:16:54	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	17:16:54	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	17:16:54	BadRaw directory deleted before starting validation!!!
+2021-08-23	17:16:54	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	17:16:54	GoodRaw directory deleted successfully!!!
+2021-08-23	17:16:54	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	17:16:54	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	17:16:54	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	17:16:54	Column Length Validation Started!!
+2021-08-23	17:16:54	Column Length Validation Completed!!
+2021-08-23	17:16:54	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	17:16:54	Missing Values Validation Started!!
+2021-08-23	17:16:54	Entered datatransformation method of dataTransform class
+2021-08-23	17:16:54	Entered the cassandra_connection method of dBOperation class
+2021-08-23	17:17:02	Entered the get_key_space method of dBOperation class
+2021-08-23	17:17:02	Entered the cassandra_connection method of dBOperation class
+2021-08-23	17:17:12	Entered the deleteRecords method of dBOperation class
+2021-08-23	17:17:12	Entered the cassandra_connection method of dBOperation class
+2021-08-23	17:17:29	Unsuccessful in executing deleteRecords method of the dBOperation class: error message is: errors={<Host: 718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bea31898-9ef2-4a82-b509-c49c9fafd9f3 us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=718c94b3-784d-4906-8682-51157bacd6e5-us-east1.db.astra.datastax.com:29042:bc787b44-053e-42ea-8cb8-3b9b379b9430
+2021-08-23	17:22:39	Entered valuesFromSchema method of Raw_Data_validation class
+2021-08-23	17:22:39	LengthOfDateStampInFile:: 8	NumberofColumns:: 21
+
+2021-08-23	17:22:39	Entered deleteExistingBadDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	17:22:39	BadRaw directory deleted before starting validation!!!
+2021-08-23	17:22:39	Entered deleteExistingGoodDataTrainingFolder method of Raw_Data_validation class
+2021-08-23	17:22:39	GoodRaw directory deleted successfully!!!
+2021-08-23	17:22:39	Entered createDirectoryForGoodBadRawData method of Raw_Data_validation class
+2021-08-23	17:22:39	Entered validationFileNameRaw method of Raw_Data_validation class
+2021-08-23	17:22:39	Entered validateColumnLength method of Raw_Data_validation class
+2021-08-23	17:22:39	Column Length Validation Started!!
+2021-08-23	17:22:39	Column Length Validation Completed!!
+2021-08-23	17:22:39	Entered validateMissingValuesInWholeColumn method of Raw_Data_validation class
+2021-08-23	17:22:39	Missing Values Validation Started!!
+2021-08-23	17:22:39	Entered datatransformation method of dataTransform class
+2021-08-23	17:22:39	Entered the cassandra_connection method of dBOperation class
+2021-08-23	17:22:45	Entered the get_key_space method of dBOperation class
+2021-08-23	17:22:45	Entered the cassandra_connection method of dBOperation class
+2021-08-23	17:22:56	Entered the deleteRecords method of dBOperation class
+2021-08-23	17:22:56	Entered the cassandra_connection method of dBOperation class
+2021-08-23	17:23:02	Entered the create_table method of dBOperation class
+2021-08-23	17:23:02	Entered the cassandra_connection method of dBOperation class
+2021-08-23	17:23:11	Entered the insertIntoTableGoodData method of dBOperation class
+2021-08-23	17:23:11	Entered the cassandra_connection method of dBOperation class
+2021-08-23	17:24:15	Entered the selectingDatafromtableintocsv method of dBOperation class
+2021-08-23	17:24:15	Entered the cassandra_connection method of dBOperation class
+2021-08-23	17:24:24	File exported successfully!!!
+2021-08-23	17:24:24	Entered the get_data method of the Data_Getter class
+2021-08-23	17:24:24	Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-23	17:24:24	Entered the remove_columns method of the Preprocessor class
+2021-08-23	17:24:24	Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-23	17:24:24	Entered the separate_label_feature method of the Preprocessor class
+2021-08-23	17:24:24	Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2021-08-23	17:24:24	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	17:24:24	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	17:24:24	Entered the scale_numerical_columns method of the Preprocessor class
+2021-08-23	17:24:24	scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2021-08-23	17:24:24	Entered the get_best_model method of the Model_Finder class
+2021-08-23	17:24:24	Entered the model_for_gnb method of the Model_Finder class
+2021-08-23	17:24:24	Entered the model_for_xgb method of the Model_Finder class
+2021-08-23	17:25:04	Entered the model_for_rf method of the Model_Finder class
+2021-08-23	17:25:31	Entered the model_for_svc method of the Model_Finder class
+2021-08-23	17:25:31	Entered the model_for_lgb method of the Model_Finder class
+2021-08-23	17:25:54	Entered the best_model_scoring method of the Model_Finder class
+2021-08-23	17:25:55	Entered the save_model method of the File_Operation class
+2021-08-23	17:25:55	Model File gnb saved. Exited the save_model method of the Model_Finder class
+2021-08-23	17:24:24	Start of Training
+2021-08-23	17:25:55	gnb Successfully trained and saved in project directory
+2021-08-23	17:25:55	Successful End of Training, sending json

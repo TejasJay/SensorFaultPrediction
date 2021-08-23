@@ -1,105 +1,159 @@
 """
 This is the Entry point for Training the Machine Learning Model.
 
-Written By: iNeuron Intelligence
+Written By: Tejas Jay
 Version: 1.0
 Revisions: None
 
 """
 
 
+
 # Doing the necessary imports
 from sklearn.model_selection import train_test_split
 from data_ingestion import data_loader
 from data_preprocessing import preprocessing
-from data_preprocessing import clustering
 from best_model_finder import tuner
 from file_operations import file_methods
 from application_logging import logger
-
-#Creating the common Logging object
+from best_model_finder import tuner_new
+import pandas as pd
+import json
+import csv
+from training_Validation_Insertion import train_validation
 
 
 class trainModel:
 
-    def __init__(self):
+    def __init__(self, path, type_of_score):
         self.log_writer = logger.App_Logger()
-        self.file_object = open("Training_Logs/ModelTrainingLog.txt", 'a+')
+        self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+        self.train_data_val = train_validation(path)
+        self.type_of_score = type_of_score
+
+
+
 
     def trainingModel(self):
         # Logging the start of Training
         self.log_writer.log(self.file_object, 'Start of Training')
         try:
             # Getting the data from the source
-            data_getter=data_loader.Data_Getter(self.file_object,self.log_writer)
-            data=data_getter.get_data()
+            data_getter = data_loader.Data_Getter()
 
+            data = data_getter.get_data()
 
             """doing the data preprocessing"""
 
-            preprocessor=preprocessing.Preprocessor(self.file_object,self.log_writer)
-            data=preprocessor.remove_columns(data,['Wafer']) # remove the unnamed column as it doesn't contribute to prediction.
+            preprocessor = preprocessing.Preprocessor()
+
+            new_data = preprocessor.remove_columns(data, columns = 'unique_id')
 
             # create separate features and labels
-            X,Y=preprocessor.separate_label_feature(data,label_column_name='Output')
+            Y, X = preprocessor.separate_label_feature(new_data, label_column_name='sar_fraud')
 
-            # check if missing values are present in the dataset
-            is_null_present=preprocessor.is_null_present(X)
 
-            # if missing values are there, replace them appropriately.
-            if(is_null_present):
-                X=preprocessor.impute_missing_values(X) # missing value imputation
+            # splitting the data into training and test set for each cluster one by one
+            x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=1 / 3)
 
-            # check further which columns do not contribute to predictions
-            # if the standard deviation for a column is zero, it means that the column has constant values
-            # and they are giving the same output both for good and bad sensors
-            # prepare the list of such columns to drop
-            cols_to_drop=preprocessor.get_columns_with_zero_std_deviation(X)
+            # Proceeding with more data pre-processing steps by scaling the features
+            train_x = preprocessor.scale_numerical_columns(x_train)
+            test_x = preprocessor.scale_numerical_columns(x_test)
 
-            # drop the columns obtained above
-            X=preprocessor.remove_columns(X,cols_to_drop)
+            # finding the best parameters and model
+            model_finder = tuner_new.Model_Finder_new()  # object initialization
 
-            """ Applying the clustering approach"""
+            scoring = model_finder.get_best_model(train_x,y_train,test_x,y_test)
 
-            kmeans=clustering.KMeansClustering(self.file_object,self.log_writer) # object initialization.
-            number_of_clusters=kmeans.elbow_plot(X)  #  using the elbow plot to find the number of optimum clusters
+            type_of_score = self.type_of_score
 
-            # Divide the data into clusters
-            X=kmeans.create_clusters(X,number_of_clusters)
+            lst_model = model_finder.best_model_scoring(scoring, type_of_score)
 
-            #create a new column in the dataset consisting of the corresponding cluster assignments.
-            X['Labels']=Y
+            confusion_matrices = []
 
-            # getting the unique clusters from our dataset
-            list_of_clusters=X['Cluster'].unique()
+            all_model_names = []
 
-            """parsing all the clusters and looking for the best ML algorithm to fit on individual cluster"""
+            for number in range(len(lst_model)):
+                model_score = lst_model[number][0]
+                print(model_score)
+                model = lst_model[number][1]
+                print(model)
+                model_name = [i[2] for i in lst_model][number]
+                print(model_name)
+                all_model_names.append(model_name)
+                cm = lst_model[number][3]
+                matrix_resl = json.loads(cm)
+                df_matrix_resl = pd.DataFrame(matrix_resl)
 
-            for i in list_of_clusters:
-                cluster_data=X[X['Cluster']==i] # filter the data for one cluster
+                confusion_matrices.append(df_matrix_resl)
 
-                # Prepare the feature and Label columns
-                cluster_features=cluster_data.drop(['Labels','Cluster'],axis=1)
-                cluster_label= cluster_data['Labels']
+                # saving the model
+                file_op = file_methods.File_Operation()
+                file_op.save_model(model, model_name)
 
-                # splitting the data into training and test set for each cluster one by one
-                x_train, x_test, y_train, y_test = train_test_split(cluster_features, cluster_label, test_size=1 / 3, random_state=355)
+                # logging the successful Training
+                self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+                self.log_writer.log(self.file_object, model_name + ' Successfully trained and saved in project directory')
+                self.file_object.close()
 
-                model_finder=tuner.Model_Finder(self.file_object,self.log_writer) # object initialization
 
-                #getting the best model for each of the clusters
-                best_model_name,best_model=model_finder.get_best_model(x_train,y_train,x_test,y_test)
+            full_df = pd.concat(confusion_matrices, axis=0)
 
-                #saving the best model to the directory.
-                file_op = file_methods.File_Operation(self.file_object,self.log_writer)
-                save_model=file_op.save_model(best_model,best_model_name+str(i))
+            full_df = full_df.reset_index()
+
+            full_df.rename(columns={"index": "Actual"}, inplace=True)
+
+            confusion_matrix_data = full_df.to_csv("csv_output_files\confusion_matrix.csv", index=False)
+
+            final_json_str = full_df.to_json(orient='index')
+
+            final_json = json.loads(final_json_str)
+
+            jsonString = json.dumps(final_json)
+
+            jsonFile = open("data.json", "w")
+
+            jsonFile.write(jsonString)
+
+            jsonFile.close()
 
             # logging the successful Training
-            self.log_writer.log(self.file_object, 'Successful End of Training')
+            self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+            self.log_writer.log(self.file_object, 'Successful End of Training, sending json')
             self.file_object.close()
 
-        except Exception:
-            # logging the unsuccessful Training
-            self.log_writer.log(self.file_object, 'Unsuccessful End of Training')
+            return final_json, confusion_matrix_data
+
+
+        except ZeroDivisionError as error:
+            self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+            self.log_writer.log(self.file_object,
+                                'Exception occured in trainingModel method of the trainModel class. Exception message:  ' + str(
+                                    error))
+            self.log_writer.log(self.file_object,
+                                'Model Selection Failed. Exited the trainingModel method of the trainModel class')
             self.file_object.close()
-            raise Exception
+        except Exception as e:
+            self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+            self.log_writer.log(self.file_object,
+                                'Exception occured in trainingModel method of the trainModel class. Exception message:  ' + str(
+                                    e))
+            self.log_writer.log(self.file_object,
+                                'Model Selection Failed. Exited the trainingModel method of the trainModel class')
+            self.file_object.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

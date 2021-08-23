@@ -1,6 +1,7 @@
 import pickle
 import os
 import shutil
+from application_logging import logger
 
 
 class File_Operation:
@@ -13,10 +14,13 @@ class File_Operation:
     Revisions: None
 
     """
-    def __init__(self,file_object,logger_object):
-        self.file_object = file_object
-        self.logger_object = logger_object
-        self.model_directory='models/'
+    def __init__(self):
+        self.log_writer = logger.App_Logger()
+        self.model_directory = 'models/'
+
+
+
+
 
     def save_model(self,model,filename):
         """
@@ -29,7 +33,9 @@ class File_Operation:
         Version: 1.0
         Revisions: None
         """
-        self.logger_object.log(self.file_object, 'Entered the save_model method of the File_Operation class')
+        self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+        self.log_writer.log(self.file_object, 'Entered the save_model method of the File_Operation class')
+        self.file_object.close()
         try:
             path = os.path.join(self.model_directory,filename) #create seperate directory for each cluster
             if os.path.isdir(path): #remove previously existing models for each clusters
@@ -37,18 +43,33 @@ class File_Operation:
                 os.makedirs(path)
             else:
                 os.makedirs(path) #
-            with open(path +'/' + filename+'.pickle',
-                      'wb') as f:
+            with open(path +'/' + filename+'.pickle','wb') as f:
                 pickle.dump(model, f) # save the model to file
-            self.logger_object.log(self.file_object,
+
+            self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+            self.log_writer.log(self.file_object,
                                    'Model File '+filename+' saved. Exited the save_model method of the Model_Finder class')
+            self.file_object.close()
 
             return 'success'
         except Exception as e:
-            self.logger_object.log(self.file_object,'Exception occured in save_model method of the Model_Finder class. Exception message:  ' + str(e))
-            self.logger_object.log(self.file_object,
+            self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+            self.log_writer.log(self.file_object,'Exception occured in save_model method of the Model_Finder class. Exception message:  ' + str(e))
+            self.log_writer.log(self.file_object,
                                    'Model File '+filename+' could not be saved. Exited the save_model method of the Model_Finder class')
+            self.file_object.close()
+
             raise Exception()
+
+
+
+
+
+
+
+
+
+
 
     def load_model(self,filename):
         """
@@ -61,52 +82,74 @@ class File_Operation:
         Version: 1.0
         Revisions: None
         """
-        self.logger_object.log(self.file_object, 'Entered the load_model method of the File_Operation class')
+        self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+        self.log_writer.log(self.file_object, 'Entered the load_model method of the File_Operation class')
+        self.file_object.close()
+
         try:
             with open(self.model_directory + filename + '/' + filename + '.pickle',
                       'rb') as f:
-                self.logger_object.log(self.file_object,
+                self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+                self.log_writer.log(self.file_object,
                                        'Model File ' + filename + ' loaded. Exited the load_model method of the Model_Finder class')
+                self.file_object.close()
+
                 return pickle.load(f)
         except Exception as e:
-            self.logger_object.log(self.file_object,
+            self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+            self.log_writer.log(self.file_object,
                                    'Exception occured in load_model method of the Model_Finder class. Exception message:  ' + str(
                                        e))
-            self.logger_object.log(self.file_object,
+            self.log_writer.log(self.file_object,
                                    'Model File ' + filename + ' could not be saved. Exited the load_model method of the Model_Finder class')
+            self.file_object.close()
+
             raise Exception()
 
-    def find_correct_model_file(self,cluster_number):
+
+
+
+
+
+
+    def delete_log_Records(self):
         """
-        Method Name: find_correct_model_file
-        Description: Select the correct model based on cluster number
-        Output: The Model file
+        Method Name: deleteRecords
+        Description: This method is used to delete all the data from the table in cassandra database.
+        Output: None
         On Failure: Raise Exception
 
         Written By: Tejas Jay (TJ)
         Version: 1.0
         Revisions: None
         """
-        self.logger_object.log(self.file_object, 'Entered the find_correct_model_file method of the File_Operation class')
+
         try:
-            self.cluster_number= cluster_number
-            self.folder_name=self.model_directory
-            self.list_of_model_files = []
-            self.list_of_files = os.listdir(self.folder_name)
-            for self.file in self.list_of_files:
-                try:
-                    if (self.file.index(str( self.cluster_number))!=-1):
-                        self.model_name=self.file
-                except:
-                    continue
-            self.model_name=self.model_name.split('.')[0]
-            self.logger_object.log(self.file_object,
-                                   'Exited the find_correct_model_file method of the Model_Finder class.')
-            return self.model_name
+            path = 'Training_Logs/Training_Main_Log.txt'
+            if os.path.exists(path):
+                os.remove(path)
         except Exception as e:
-            self.logger_object.log(self.file_object,
-                                   'Exception occured in find_correct_model_file method of the Model_Finder class. Exception message:  ' + str(
-                                       e))
-            self.logger_object.log(self.file_object,
-                                   'Exited the find_correct_model_file method of the Model_Finder class with Failure')
-            raise Exception()
+            raise e
+
+
+
+
+    def delete_log_pred_Records(self):
+        """
+        Method Name: deleteRecords
+        Description: This method is used to delete all the data from the table in cassandra database.
+        Output: None
+        On Failure: Raise Exception
+
+        Written By: Tejas Jay (TJ)
+        Version: 1.0
+        Revisions: None
+        """
+
+        try:
+            path = 'Prediction_Logs/Prediction_Log.txt'
+            if os.path.exists(path):
+                os.remove(path)
+        except Exception as e:
+            raise e
+

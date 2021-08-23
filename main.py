@@ -10,49 +10,90 @@ import flask_monitoringdashboard as dashboard
 from predictFromModel import prediction
 from data_preprocessing.preprocessing import Preprocessor
 import json
+import pandas as pd
+
 
 os.putenv('LANG', 'en_US.UTF-8')
 os.putenv('LC_ALL', 'en_US.UTF-8')
+
+
+
+
+
+
+
+
 
 app = Flask(__name__)
 dashboard.bind(app)
 CORS(app)
 
 
+
+
+
+
 @app.route("/", methods=['GET'])
 @cross_origin()
 def home():
+    return render_template('predict_train.html')
+
+
+
+@app.route("/predict_page", methods=['GET'])
+@cross_origin()
+def predict_page():
     return render_template('predict.html')
+
+
+@app.route("/train_page", methods=['GET'])
+@cross_origin()
+def train_page():
+    return render_template('train.html')
+
+
+
 
 @app.route("/predict", methods=['POST'])
 @cross_origin()
 def predictRouteClient():
     try:
         if request.json is not None:
-            path = request.json['filepath']
+
+            path = request.json['folderpath']
 
             pred_val = pred_validation(path) #object initialization
 
             pred_val.prediction_validation() #calling the prediction_validation function
 
-            pred = prediction("Prediction_Batch_files") #object initialization
+            pred = prediction(path, "svc") #object initialization
 
             # predicting for dataset present in database
-            path,json_predictions = pred.predictionFromModel()
-            return Response("Prediction File created at !!!"  +str(path) +'and few of the predictions are '+str(json.loads(json_predictions) ))
+            json_prediction_output = pred.predictionFromModel()
+
+            return json_prediction_output
+
+
         elif request.form is not None:
-            path = request.form['filepath']
+
+            path = request.form['folderpath']
+
+            model_name = request.form['modelname']
+
+            print(path)
 
             pred_val = pred_validation(path) #object initialization
 
             pred_val.prediction_validation() #calling the prediction_validation function
 
-            pred = prediction("Prediction_Batch_files") #object initialization
+            pred = prediction(path, model_name) #object initialization
 
             # predicting for dataset present in database
-            path,json_predictions = pred.predictionFromModel()
+            pred.predictionFromModel()
 
             return Response("Prediction File created at !!!"  +str(path))
+
+
         else:
             print('Nothing Matched')
     except ValueError:
@@ -63,10 +104,28 @@ def predictRouteClient():
         return Response("Error Occurred! %s" %e)
 
 
+
+
+
+
+
+
+
+
 @app.route("/viewpredictedfile", methods=['GET'])
 @cross_origin()
 def viewprediction():
-    return render_template('Prediction_result.html')
+    df1 = pd.read_csv("Prediction_Output_File\Predictions.csv", header=None)
+    table1 = df1.to_html(index=False)
+    df2 = pd.read_csv("csv_output_files\confusion_matrix.csv", header=None)
+    table2 = df2.to_html(index=False)
+    return render_template('train.html', table1=table1, table2=table2)
+
+
+
+
+
+
 
 
 @app.route("/viewpredictedlog", methods=['GET'])
@@ -76,21 +135,63 @@ def viewpredictionlog():
 
 
 
-@app.route("/train", methods=['POST'])
+
+
+
+
+
+@app.route('/train', methods=['POST'])
 @cross_origin()
 def trainRouteClient():
 
     try:
-        if request.json['folderPath'] is not None:
-            path = request.json['folderPath']
+        if request.json is not None:
 
-            train_valObj = train_validation(path) #object initialization
+            path = request.json['folderpath']
 
-            train_valObj.train_validation()#calling the training_validation function
+            train_valObj = train_validation(path)  # object initialization
+
+            train_valObj.train_validation()  # calling the prediction_validation function
+
+            trainModelObj = trainModel(path, "F1")  # object initialization
+
+            # predicting for dataset present in database
+            final_json = trainModelObj.trainingModel()
+
+            return final_json
 
 
-            trainModelObj = trainModel() #object initialization
-            trainModelObj.trainingModel() #training the model for the files in the table
+
+        elif request.form is not None:
+
+            path = request.form['folderpath']
+
+            metrix_name = request.form['metrix']
+
+            print(path)
+
+            print(metrix_name)
+
+            train_valObj = train_validation(path)  # object initialization
+
+            train_valObj.train_validation()  # calling the prediction_validation function
+
+            trainModelObj = trainModel(path, metrix_name)  # object initialization
+
+            # predicting for dataset present in database
+            trainModelObj.trainingModel()
+
+            df1 = pd.read_csv("Prediction_Output_File\Predictions.csv", header=None)
+            table1 = df1.to_html(index=False)
+            df2 = pd.read_csv("csv_output_files\confusion_matrix.csv", header=None)
+            table2 = df2.to_html(index=False)
+
+            return render_template('train.html', table1=table1, table2=table2)
+
+
+
+        else:
+            print('Nothing Matched')
 
 
     except ValueError:
@@ -105,6 +206,16 @@ def trainRouteClient():
 
         return Response("Error Occurred! %s" % e)
     return Response("Training successfull!!")
+
+
+
+
+
+
+
+
+
+
 
 port = int(os.getenv("PORT",5000))
 if __name__ == "__main__":

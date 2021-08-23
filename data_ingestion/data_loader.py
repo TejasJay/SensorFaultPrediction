@@ -1,4 +1,8 @@
 import pandas as pd
+from application_logging import logger
+
+
+
 
 class Data_Getter:
     """
@@ -9,10 +13,12 @@ class Data_Getter:
     Revisions: None
 
     """
-    def __init__(self, file_object, logger_object):
+    def __init__(self):
         self.training_file='Training_FileFromDB/InputFile.csv'
-        self.file_object=file_object
-        self.logger_object=logger_object
+        self.log_writer = logger.App_Logger()
+
+
+
 
     def get_data(self):
         """
@@ -26,15 +32,22 @@ class Data_Getter:
         Revisions: None
 
         """
-        self.logger_object.log(self.file_object,'Entered the get_data method of the Data_Getter class')
+        self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+        self.log_writer.log(self.file_object,'Entered the get_data method of the Data_Getter class')
+        self.file_object.close()
         try:
-            self.data= pd.read_csv(self.training_file) # reading the data file
-            self.logger_object.log(self.file_object,'Data Load Successful.Exited the get_data method of the Data_Getter class')
+            self.data = pd.read_csv(self.training_file) # reading the data file
+            #self.data = self.data.drop(columns='unique_ID', axis=1, inplace=True)
+            self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+            self.log_writer.log(self.file_object,'Data Load Successful.Exited the get_data method of the Data_Getter class')
+            self.file_object.close()
+
             return self.data
         except Exception as e:
-            self.logger_object.log(self.file_object,'Exception occured in get_data method of the Data_Getter class. Exception message: '+str(e))
-            self.logger_object.log(self.file_object,
+            self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
+            self.log_writer.log(self.file_object,'Exception occured in get_data method of the Data_Getter class. Exception message: '+str(e))
+            self.log_writer.log(self.file_object,
                                    'Data Load Unsuccessful.Exited the get_data method of the Data_Getter class')
-            raise Exception()
+            self.file_object.close()
 
-
+            raise e

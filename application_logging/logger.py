@@ -9,14 +9,14 @@ class App_Logger:
         Version: 1.0
         Revisions: None
 
-        """
+    """
     def __init__(self):
         pass
 
     def log(self, file_object, log_message):
         """
                 Method Name: log
-                Description: This method logs the message to the file object file
+                Description: This method logs the message to the file_object file
                 Output: text message.
                 On Failure: None
 
@@ -24,7 +24,7 @@ class App_Logger:
                 Version: 1.0
                 Revisions: None
 
-                """
+        """
         self.now = datetime.now()
         self.date = self.now.date()
         self.current_time = self.now.strftime("%H:%M:%S")
