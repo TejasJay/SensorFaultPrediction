@@ -180,36 +180,59 @@ class Preprocessor:
             raise e
 
 
-
+    
     def save_html(self):
-
         """
         Method Name: save_html
         Description: Loads the model with csv and saves it as html in template directory
         Output: html file
-        On Failure: Raise Exception
-
+        On Failure: Raise Exception with specific message.
+    
         Written By: Tejas Jay
-        Version: 1.0
-        Revisions: None
+        Version: 1.1
+        Revisions: Added file validation, improved logging, and better error handling.
         """
         self.logger_object.log(self.file_object, 'Entered save_html method')
+    
+        # Validate the input CSV path
+        csv_path = "Prediction_Output_File\\Predictions.csv"
+        html_path = "templates\\Prediction_result.html"
+        
+        if not os.path.exists(csv_path):
+            error_message = f"CSV file does not exist at the specified path: {csv_path}"
+            self.logger_object.log(self.file_object, error_message)
+            raise Exception(error_message)
+    
+        if not os.path.exists(os.path.dirname(html_path)):
+            error_message = f"Template directory does not exist: {os.path.dirname(html_path)}"
+            self.logger_object.log(self.file_object, error_message)
+            raise Exception(error_message)
+    
         try:
-            data1 = pd.read_csv("Prediction_Output_File\Predictions.csv", index_col=False)
+            # Read CSV data and assign proper column names
+            data1 = pd.read_csv(csv_path, index_col=False)
             column = ['Number', 'Wafer_Sensor_ID', 'Prediction']
             data1.columns = column
+            
+            # Convert to HTML
             result1 = data1.to_html(index=False)
-            text_file = open("templates\Prediction_result.html", "w")
-            text_file.write(result1)
-            text_file.close()
-            self.logger_object.log(self.file_object, 'html file saved successfully in templates')
-
+            
+            # Write to HTML file using 'with' to ensure proper file handling
+            with open(html_path, "w") as text_file:
+                text_file.write(result1)
+    
+            self.logger_object.log(self.file_object, f'HTML file saved successfully in {html_path}')
+    
         except Exception as e:
-            self.logger_object.log(self.file_object,'Exception occured in save_html method of the Preprocessor class. Exception message:  ' + str(e))
-            self.logger_object.log(self.file_object,'Exited save_html method: Unsuccessful  ')
-            raise e
-
-
+            error_message = f"Exception occurred in save_html method. Exception message: {str(e)}"
+            self.logger_object.log(self.file_object, error_message)
+            self.logger_object.log(self.file_object, 'Exited save_html method: Unsuccessful')
+            
+            # Raising the exception with the specific error message
+            raise Exception(f"Failed to save HTML file: {str(e)}")
+    
+    
+    
 
 
 
