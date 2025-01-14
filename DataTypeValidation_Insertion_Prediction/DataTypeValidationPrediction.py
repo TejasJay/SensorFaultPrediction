@@ -9,11 +9,7 @@ from application_logging.logger import App_Logger
 
 class dBOperation:
     """
-    This class shall be used for handling all the SQL operations.
 
-    Written By: Tejas Jay (TJ)
-    Version: 1.0
-    Revisions: None
 
     """
 
