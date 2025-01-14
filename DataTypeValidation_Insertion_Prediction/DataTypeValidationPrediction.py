@@ -54,9 +54,6 @@ class dBOperation:
         Output: None
         On Failure: Raise Exception
 
-        Written By: Tejas Jay (TJ)
-        Version: 1.0
-        Revisions: None
 
         """
         try:
