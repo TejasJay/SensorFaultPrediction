@@ -4,7 +4,7 @@ from datetime import datetime
 from os import listdir
 import os
 import numpy as np
-import pandas as pd
+import pandas
 import csv
 from application_logging.logger import App_Logger
 
